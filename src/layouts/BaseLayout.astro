@@ -1,0 +1,132 @@
+---
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import '../styles/globals.css';
+
+interface Props {
+	title?: string;
+	description?: string;
+	lang?: string;
+}
+
+const { title = SITE_TITLE, description = SITE_DESCRIPTION, lang = 'de' } = Astro.props;
+---
+
+<!doctype html>
+<html lang={lang}>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={Astro.url} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content="https://di.day/logo.svg" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content={Astro.url} />
+		<meta property="twitter:title" content={title} />
+		<meta property="twitter:description" content={description} />
+		<meta property="twitter:image" content="https://di.day/logo.svg" />
+
+		<link rel="icon" type="image/svg+xml" href="/logo.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+
+		<!-- Schema.org structured data -->
+		<script type="application/ld+json" set:html={JSON.stringify({
+			"@context": "https://schema.org",
+			"@type": "Organization",
+			"name": "Digital Independence Day",
+			"url": "https://di.day",
+			"logo": "https://di.day/images/logo.svg",
+			"description": SITE_DESCRIPTION,
+			"sameAs": []
+		})} />
+		<script type="application/ld+json" set:html={JSON.stringify({
+			"@context": "https://schema.org",
+			"@type": "WebSite",
+			"name": SITE_TITLE,
+			"url": "https://di.day",
+			"description": SITE_DESCRIPTION,
+			"inLanguage": lang
+		})} />
+	</head>
+	<body>
+		<div class="min-h-screen flex flex-col">
+			<header class="sticky top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
+				<nav class="container mx-auto px-4 py-4">
+					<div class="flex items-center justify-between">
+					<a href="/" class="flex items-center gap-3">
+						<img src="/logo.svg" alt="DI.DAY Logo" class="h-10 w-auto" />
+						<span class="text-2xl font-display font-bold text-primary-600 dark:text-primary-400">DI.DAY</span>
+					</a>
+						<div class="hidden md:flex items-center gap-6">
+							<a href="/rezepte" class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+								Wechselrezepte
+							</a>
+							<a href="/alternativen" class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+								Alternativen
+							</a>
+							<a href="/faqs" class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+								FAQs
+							</a>
+							<a
+								href="/newsletter"
+								class="px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors"
+							>
+								Newsletter
+							</a>
+						</div>
+					</div>
+				</nav>
+			</header>
+
+			<main class="flex-1">
+				<slot />
+			</main>
+
+			<footer class="bg-gray-900 text-gray-300 py-12">
+				<div class="container mx-auto px-4">
+					<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+						<div>
+							<h3 class="text-xl font-display font-bold text-white mb-4">Digital Independence Day</h3>
+							<p class="text-sm">
+								Jeden ersten Sonntag auf die gute Seite wechseln!
+							</p>
+						</div>
+						<div>
+							<h4 class="font-semibold text-white mb-4">Links</h4>
+							<ul class="space-y-2 text-sm">
+								<li><a href="/rezepte" class="hover:text-primary-400 transition-colors">Wechselrezepte</a></li>
+								<li><a href="/alternativen" class="hover:text-primary-400 transition-colors">Alternativen</a></li>
+								<li><a href="/faqs" class="hover:text-primary-400 transition-colors">FAQs</a></li>
+								<li><a href="/newsletter" class="hover:text-primary-400 transition-colors">Newsletter</a></li>
+							</ul>
+						</div>
+						<div>
+							<h4 class="font-semibold text-white mb-4">Rechtliches</h4>
+							<ul class="space-y-2 text-sm">
+								<li><a href="/impressum" class="hover:text-primary-400 transition-colors">Impressum</a></li>
+								<li><a href="/datenschutz" class="hover:text-primary-400 transition-colors">Datenschutz</a></li>
+								<li><a href="/initiatoren" class="hover:text-primary-400 transition-colors">Initiatoren</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="mt-8 pt-8 border-t border-gray-800 text-sm text-center">
+						<p>&copy; {new Date().getFullYear()} Digital Independence Day. Alle Rechte vorbehalten.</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

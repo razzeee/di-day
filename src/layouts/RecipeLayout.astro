@@ -1,0 +1,119 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import BaseLayout from './BaseLayout.astro';
+import { Image } from 'astro:assets';
+
+type Props = CollectionEntry<'recipes'>['data'] & {
+	slug: string;
+};
+
+const { title, description, pubDate, category, heroImage } = Astro.props;
+---
+
+<BaseLayout title={`${title} | Digital Independence Day`} description={description}>
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="article" slot="head" />
+	<meta property="og:url" content={Astro.url} slot="head" />
+	<meta property="og:title" content={title} slot="head" />
+	<meta property="og:description" content={description} slot="head" />
+	{heroImage && <meta property="og:image" content={`https://di.day${heroImage.src}`} slot="head" />}
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image" slot="head" />
+	<meta property="twitter:url" content={Astro.url} slot="head" />
+	<meta property="twitter:title" content={title} slot="head" />
+	<meta property="twitter:description" content={description} slot="head" />
+	{heroImage && <meta property="twitter:image" content={`https://di.day${heroImage.src}`} slot="head" />}
+
+	<!-- Schema.org HowTo structured data -->
+	<script type="application/ld+json" slot="head" set:html={JSON.stringify({
+		"@context": "https://schema.org",
+		"@type": "HowTo",
+		"name": title,
+		"description": description,
+		"datePublished": pubDate.toISOString(),
+		"image": heroImage ? `https://di.day${heroImage.src}` : undefined,
+		"step": [
+			{
+				"@type": "HowToSection",
+				"name": "Zubereitung",
+				"position": 1
+			},
+			{
+				"@type": "HowToSection",
+				"name": "Nachtisch",
+				"position": 2
+			},
+			{
+				"@type": "HowToSection",
+				"name": "Topping",
+				"position": 3
+			}
+		],
+		"about": {
+			"@type": "Thing",
+			"name": category
+		}
+	})} />
+	<article class="container mx-auto px-4 py-12 max-w-4xl">
+		{heroImage && (
+			<div class="mb-8 rounded-2xl overflow-hidden">
+				<Image src={heroImage} alt={title} class="w-full h-auto" />
+			</div>
+		)}
+
+		<div class="mb-8">
+			<div class="flex items-center gap-4 mb-4">
+				<span class="px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 rounded-full text-sm font-medium">
+					{category}
+				</span>
+				<time class="text-gray-500 dark:text-gray-400 text-sm">
+					{pubDate.toLocaleDateString('de-DE', { year: 'numeric', month: 'long', day: 'numeric' })}
+				</time>
+			</div>
+		</div>
+
+		<div class="prose prose-lg dark:prose-invert max-w-none">
+			<slot />
+		</div>
+
+		<div class="mt-12 pt-8 border-t border-gray-200 dark:border-gray-800">
+			<a
+				href="/rezepte"
+				class="inline-flex items-center text-primary-600 dark:text-primary-400 hover:underline"
+			>
+				← Zurück zu allen Wechselrezepten
+			</a>
+		</div>
+	</article>
+</BaseLayout>
+
+<style>
+	.prose :global(h2) {
+		@apply text-2xl font-display font-bold mt-8 mb-4 text-gray-900 dark:text-gray-100;
+	}
+
+	.prose :global(h3) {
+		@apply text-xl font-display font-bold mt-6 mb-3 text-gray-900 dark:text-gray-100;
+	}
+
+	.prose :global(ul) {
+		@apply list-disc pl-6 space-y-2;
+	}
+
+	.prose :global(ol) {
+		@apply list-decimal pl-6 space-y-2;
+	}
+
+	.prose :global(p) {
+		@apply mb-4 text-gray-700 dark:text-gray-300;
+	}
+
+	.prose :global(a) {
+		@apply text-primary-600 dark:text-primary-400 hover:underline;
+	}
+
+	.prose :global(strong) {
+		@apply font-semibold text-gray-900 dark:text-gray-100;
+	}
+</style>

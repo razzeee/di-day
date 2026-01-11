@@ -26,12 +26,6 @@ export default function RecipeCard({ recipe }: Props) {
       )}
 
       <div className="p-6">
-        <div className="flex items-center gap-2 mb-3">
-          <span className="px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 rounded-full text-sm font-medium">
-            {recipe.data.category}
-          </span>
-        </div>
-
         <h3 className="text-xl font-display font-bold mb-2 text-gray-900 dark:text-gray-100 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
           {recipe.data.title}
         </h3>

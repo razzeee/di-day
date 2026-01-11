@@ -62,20 +62,18 @@ const { title, description, pubDate, category, heroImage } = Astro.props;
 			</div>
 		)}
 
-		<div class="mb-8">
-			<div class="flex items-center gap-4 mb-4">
-				<span class="px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 rounded-full text-sm font-medium">
-					{category}
-				</span>
-				<time class="text-gray-500 dark:text-gray-400 text-sm">
-					{pubDate.toLocaleDateString('de-DE', { year: 'numeric', month: 'long', day: 'numeric' })}
-				</time>
-			</div>
-		</div>
 
-		<div class="prose prose-lg dark:prose-invert max-w-none">
-			<slot />
+	<div class="prose prose-lg dark:prose-invert max-w-none">
+		<slot />
+	</div>
+
+	<div class="mt-8">
+		<div class="flex items-center gap-4 mb-4">
+			<time class="text-gray-500 dark:text-gray-400 text-sm">
+				{pubDate.toLocaleDateString('de-DE', { year: 'numeric', month: 'long', day: 'numeric' })}
+			</time>
 		</div>
+	</div>
 
 		<div class="mt-12 pt-8 border-t border-gray-200 dark:border-gray-800">
 			<a

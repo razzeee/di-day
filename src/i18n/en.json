@@ -8,9 +8,11 @@
         "privacy": "Privacy",
         "initiators": "Initiators"
     },
-    "footer": {
-        "desc": "Switch to the good side every first Sunday!",
-        "rights": "All rights reserved.",
+    "site": {
+        "title": "Digital Independence Day",
+        "description": "Switch to the good side every first Sunday!"
+    },
+    "base_layout": {
         "links": "Links",
         "legal": "Legal"
     },

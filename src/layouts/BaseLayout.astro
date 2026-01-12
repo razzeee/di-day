@@ -1,7 +1,6 @@
 ---
 import { ClientRouter } from "astro:transitions";
 import { getRelativeLocaleUrl } from "astro:i18n";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import "../styles/globals.css";
 import MobileMenu from "../components/MobileMenu";
 import de from "../i18n/de.json";
@@ -15,14 +14,12 @@ interface Props {
   lang?: string;
 }
 
-const {
-  title = SITE_TITLE,
-  description = SITE_DESCRIPTION,
-  lang = Astro.currentLocale || "de",
-} = Astro.props;
+const { lang = Astro.currentLocale || "de" } = Astro.props;
 
 const ui = { de, en };
 const t = ui[lang as "de" | "en"] || de;
+
+const { title = t.site.title, description = t.site.description } = Astro.props;
 
 const navItems = [
   { href: getRelativeLocaleUrl(lang, "/"), label: "Home" }, // Home is usually fine untranslated
@@ -99,10 +96,10 @@ const legalItems = [
       set:html={JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Organization",
-        name: "Digital Independence Day",
+        name: title,
         url: "https://di.day",
         logo: "https://di.day/images/logo.svg",
-        description: SITE_DESCRIPTION,
+        description: description,
         sameAs: [],
       })}
     />
@@ -111,9 +108,9 @@ const legalItems = [
       set:html={JSON.stringify({
         "@context": "https://schema.org",
         "@type": "WebSite",
-        name: SITE_TITLE,
+        name: title,
         url: "https://di.day",
-        description: SITE_DESCRIPTION,
+        description: description,
         inLanguage: lang,
       })}
     />
@@ -197,14 +194,14 @@ const legalItems = [
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
               <h3 class="text-xl font-display font-bold text-white mb-4">
-                Digital Independence Day
+                {t.site.title}
               </h3>
               <p class="text-sm">
-                {t.footer.desc}
+                {t.site.description}
               </p>
             </div>
             <div>
-              <h4 class="font-semibold text-white mb-4">{t.footer.links}</h4>
+              <h4 class="font-semibold text-white mb-4">{t.base_layout.links}</h4>
               <ul class="space-y-2 text-sm">
                 <li>
                   <a
@@ -237,7 +234,7 @@ const legalItems = [
               </ul>
             </div>
             <div>
-              <h4 class="font-semibold text-white mb-4">{t.footer.legal}</h4>
+              <h4 class="font-semibold text-white mb-4">{t.base_layout.legal}</h4>
               <ul class="space-y-2 text-sm">
                 <li>
                   <a
@@ -262,13 +259,6 @@ const legalItems = [
                 </li>
               </ul>
             </div>
-          </div>
-          <div class="mt-8 pt-8 border-t border-gray-800 text-sm text-center">
-            <p>
-              &copy; {new Date().getFullYear()} Digital Independence Day. {
-                t.footer.rights
-              }
-            </p>
           </div>
         </div>
       </footer>

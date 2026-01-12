@@ -8,9 +8,11 @@
         "privacy": "Datenschutz",
         "initiators": "Initiatoren"
     },
-    "footer": {
-        "desc": "Jeden ersten Sonntag auf die gute Seite wechseln!",
-        "rights": "Alle Rechte vorbehalten.",
+    "site": {
+        "title": "Digital Independence Day",
+        "description": "Jeden ersten Sonntag auf die gute Seite wechseln!"
+    },
+    "base_layout": {
         "links": "Links",
         "legal": "Rechtliches"
     },

@@ -6,7 +6,7 @@
         "newsletter": "Newsletter",
         "imprint": "Imprint",
         "privacy": "Privacy",
-        "initiators": "Initiators"
+        "partners": "Partners"
     },
     "site": {
         "title": "Digital Independence Day",
@@ -90,7 +90,8 @@
             "Only once a month, no spam"
         ]
     },
-    "initiators_page": {
+    "partners_page": {
+        "partners_title": "Partners",
         "contact_title": "Contact",
         "contact_p1": "Do you have questions or want to get involved?",
         "contact_cta": "Subscribe to our newsletter",

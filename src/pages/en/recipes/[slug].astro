@@ -1,0 +1,21 @@
+---
+import { getCollection, render } from "astro:content";
+import RecipeLayout from "../../../layouts/RecipeLayout.astro";
+
+export async function getStaticPaths() {
+  const recipes = await getCollection("recipes");
+  return recipes
+    .filter((recipe) => recipe.data.lang === "en")
+    .map((recipe) => ({
+      params: { slug: recipe.id.replace(/^en\//, "").replace(/\.md$/, "") },
+      props: { entry: recipe },
+    }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<RecipeLayout {...entry.data} slug={entry.id}>
+  <Content />
+</RecipeLayout>

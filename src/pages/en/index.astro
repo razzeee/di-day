@@ -1,0 +1,147 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getRelativeLocaleUrl } from "astro:i18n";
+import RecipeCard from "../../components/RecipeCard";
+import NewsletterForm from "../../components/NewsletterForm";
+import { getCollection } from "astro:content";
+import { useTranslations } from "../../utils/i18n";
+
+const lang = "en";
+const t = useTranslations(lang);
+
+const recipes = (await getCollection("recipes")).filter(
+  (recipe) => recipe.data.lang === "en"
+);
+const featuredRecipes = recipes.slice(0, 3);
+---
+
+<BaseLayout lang="en">
+  <section
+    class="relative bg-gradient-to-br from-primary-600 to-accent-600 text-white py-20 overflow-hidden"
+  >
+    <!-- Hero background image -->
+    <div class="absolute inset-0 opacity-20">
+      <img src="/hero1.jpg" alt="" class="w-full h-full object-cover" />
+    </div>
+
+    <!-- Content overlay -->
+    <div class="relative container mx-auto px-4 text-center">
+      <h1 class="text-5xl md:text-6xl font-display font-bold mb-6">
+        Switch to the good side every first Sunday!
+      </h1>
+      <p class="text-xl md:text-2xl mb-8 text-primary-100">
+        The next DI.DAY is on February 1st
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href={getRelativeLocaleUrl("en", "recipes")}
+          class="px-8 py-4 bg-white text-primary-600 rounded-lg font-semibold hover:bg-primary-50 transition-colors shadow-lg"
+        >
+          Discover Recipes
+        </a>
+        <a
+          href={getRelativeLocaleUrl("en", "alternatives")}
+          class="px-8 py-4 bg-primary-700 text-white rounded-lg font-semibold hover:bg-primary-800 transition-colors"
+        >
+          More Alternatives
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-50 dark:bg-gray-900">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-display font-bold text-center mb-12">
+        Popular Recipes
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {
+          featuredRecipes.map((recipe) => (
+            <RecipeCard
+              recipe={recipe}
+              seeText={t.recipe.see}
+              href={getRelativeLocaleUrl(
+                lang,
+                `recipes/${recipe.id.replace(/^en\//, "").replace(/\.md$/, "")}`
+              )}
+              client:load
+            />
+          ))
+        }
+      </div>
+      <div class="text-center mt-12">
+        <a
+          href={getRelativeLocaleUrl("en", "recipes")}
+          class="inline-flex items-center text-primary-600 dark:text-primary-400 font-semibold hover:underline"
+        >
+          View all recipes →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-display font-bold mb-6">
+            Why digital independence?
+          </h2>
+          <div class="space-y-4 text-gray-600 dark:text-gray-400">
+            <p>
+              Big tech corporations collect massive amounts of data, influence
+              our perception through algorithms, and have an enormous impact on
+              our lives.
+            </p>
+            <p>
+              There are privacy-friendly and ethical alternatives for almost
+              every service. Switching is often easier than you think!
+            </p>
+          </div>
+          <div class="mt-8">
+            <a
+              href={getRelativeLocaleUrl("en", "faqs")}
+              class="inline-flex items-center px-6 py-3 bg-primary-600 text-white rounded-lg font-semibold hover:bg-primary-700 transition-colors"
+            >
+              Learn more
+            </a>
+          </div>
+        </div>
+        <div>
+          <NewsletterForm
+            t={t.newsletter}
+            privacyUrl={getRelativeLocaleUrl(lang, "privacy")}
+            client:load
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-50 dark:bg-gray-900">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-display font-bold mb-6">
+        Together we are stronger
+      </h2>
+      <p
+        class="text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto"
+      >
+        Every small step counts. Share your experiences and help others switch.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href={getRelativeLocaleUrl("en", "together")}
+          class="px-6 py-3 bg-primary-600 text-white rounded-lg font-semibold hover:bg-primary-700 transition-colors"
+        >
+          Switch together
+        </a>
+        <a
+          href={getRelativeLocaleUrl("en", "talkaboutit")}
+          class="px-6 py-3 border-2 border-primary-600 text-primary-600 dark:text-primary-400 rounded-lg font-semibold hover:bg-primary-50 dark:hover:bg-primary-950 transition-colors"
+        >
+          Talk about it
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

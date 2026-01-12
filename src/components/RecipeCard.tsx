@@ -3,14 +3,16 @@ import type { CollectionEntry } from "astro:content";
 
 interface Props {
   recipe: CollectionEntry<"recipes">;
+  seeText: string;
+  href: string;
 }
 
-export default function RecipeCard({ recipe }: Props) {
+export default function RecipeCard({ recipe, seeText, href }: Props) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
     <a
-      href={`/rezepte/${recipe.id.replace(/^de\//, "").replace(/\.md$/, "")}`}
+      href={href}
       className="group block bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -43,7 +45,7 @@ export default function RecipeCard({ recipe }: Props) {
               isHovered ? "translate-x-1" : ""
             }`}
           >
-            Rezept ansehen →
+            {seeText}
           </span>
         </div>
       </div>

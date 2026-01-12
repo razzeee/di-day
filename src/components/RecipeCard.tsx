@@ -16,7 +16,10 @@ export default function RecipeCard({ recipe }: Props) {
       onMouseLeave={() => setIsHovered(false)}
     >
       {recipe.data.heroImage && (
-        <div className="aspect-video overflow-hidden">
+        <div
+          className="aspect-video overflow-hidden"
+          data-astro-transition:name={`recipe-image-${recipe.data.title}`}
+        >
           <img
             src={recipe.data.heroImage.src}
             alt={recipe.data.title}

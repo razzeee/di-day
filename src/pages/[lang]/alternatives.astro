@@ -3,9 +3,10 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getEntry, render } from "astro:content";
 import { Image } from "astro:assets";
 import romeImage from "../../assets/rome.jpg";
+import { LOCALES } from "../../consts";
 
 export function getStaticPaths() {
-  return [{ params: { lang: "de" } }, { params: { lang: "en" } }];
+  return LOCALES.map((lang) => ({ params: { lang } }));
 }
 
 const { lang } = Astro.params;

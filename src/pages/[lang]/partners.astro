@@ -4,9 +4,10 @@ import { getEntry, render } from "astro:content";
 import { getRelativeLocaleUrl } from "astro:i18n";
 import { useTranslations } from "../../utils/i18n";
 import partners from "../../data/partners.json";
+import { LOCALES } from "../../consts";
 
 export function getStaticPaths() {
-  return [{ params: { lang: "de" } }, { params: { lang: "en" } }];
+  return LOCALES.map((lang) => ({ params: { lang } }));
 }
 
 const { lang } = Astro.params;

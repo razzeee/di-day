@@ -7,9 +7,10 @@ import { getCollection } from "astro:content";
 import { useTranslations } from "../../utils/i18n";
 import { Image } from "astro:assets";
 import heroImage from "../../assets/hero1.jpg";
+import { LOCALES } from "../../consts";
 
 export function getStaticPaths() {
-  return [{ params: { lang: "de" } }, { params: { lang: "en" } }];
+  return LOCALES.map((lang) => ({ params: { lang } }));
 }
 
 const { lang } = Astro.params;

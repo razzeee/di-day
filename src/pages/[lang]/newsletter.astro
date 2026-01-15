@@ -3,9 +3,10 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import NewsletterForm from "../../components/NewsletterForm";
 import { useTranslations } from "../../utils/i18n";
 import { getRelativeLocaleUrl } from "astro:i18n";
+import { LOCALES } from "../../consts";
 
 export function getStaticPaths() {
-  return [{ params: { lang: "de" } }, { params: { lang: "en" } }];
+  return LOCALES.map((lang) => ({ params: { lang } }));
 }
 
 const { lang } = Astro.params;

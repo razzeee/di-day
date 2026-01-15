@@ -14,7 +14,7 @@ const { lang } = Astro.params;
 const t = useTranslations(lang);
 
 const recipes = (await getCollection("recipes")).filter(
-  (recipe) => recipe.data.lang === lang
+  (recipe) => recipe.id.split("/")[0] === lang
 );
 ---
 

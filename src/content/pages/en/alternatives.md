@@ -1,7 +1,6 @@
 ---
 title: "Alternatives"
 description: "Many roads lead out of Rome - Discover alternatives to Big Tech"
-lang: "en"
 ---
 
 # Many roads lead out of Rome

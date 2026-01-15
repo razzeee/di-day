@@ -1,7 +1,7 @@
 ---
 title: "Imprint"
 description: "Imprint and legal information"
-lang: "en"
+
 ---
 
 # Imprint

@@ -3,7 +3,6 @@ title: "Lokaler Buchladen"
 description: "Unterstütze lokale Buchhandlungen statt Amazon"
 pubDate: 2026-01-05
 category: "Shopping"
-lang: "de"
 heroImage: "../../../assets/book.jpg"
 ---
 

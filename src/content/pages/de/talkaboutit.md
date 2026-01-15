@@ -1,7 +1,7 @@
 ---
 title: "Sprich drüber"
 description: "Teile deine Erfahrungen mit digitaler Unabhängigkeit."
-lang: "de"
+
 ---
 
 # Sprich drüber

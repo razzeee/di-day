@@ -1,7 +1,7 @@
 ---
 title: "Talk About It"
 description: "Share your experiences with digital independence."
-lang: "en"
+
 ---
 
 # Talk About It

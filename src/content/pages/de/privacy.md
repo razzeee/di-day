@@ -1,7 +1,7 @@
 ---
 title: "Datenschutzerklärung"
 description: "Datenschutzerklärung und Informationen zum Datenschutz"
-lang: "de"
+
 ---
 
 # Datenschutzerklärung

@@ -3,7 +3,7 @@ title: "WhatsApp zu Signal"
 description: "Wechsle von WhatsApp zu Signal - der sicheren und datenschutzfreundlichen Alternative"
 pubDate: 2026-01-02
 category: "Messenger"
-lang: "de"
+
 heroImage: "../../../assets/cake.jpg"
 ---
 

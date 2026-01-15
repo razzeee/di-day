@@ -1,7 +1,7 @@
 ---
 title: "Partners"
 description: "About the partners of Digital Independence Day"
-lang: "en"
+
 ---
 
 # Partners

@@ -5,7 +5,7 @@ import RecipeLayout from "../../../layouts/RecipeLayout.astro";
 export async function getStaticPaths() {
   const recipes = await getCollection("recipes");
   return recipes.map((recipe) => {
-    const lang = recipe.data.lang;
+    const lang = recipe.id.split("/")[0];
     const slug = recipe.id
       .replace(new RegExp(`^${lang}/`), "")
       .replace(/\.md$/, "");

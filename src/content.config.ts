@@ -1,6 +1,5 @@
 import { defineCollection, z } from "astro:content";
 import { glob } from "astro/loaders";
-import { LOCALES } from "./consts";
 
 const recipes = defineCollection({
   loader: glob({ base: "./src/content/recipes", pattern: "**/*.{md,mdx}" }),
@@ -12,7 +11,6 @@ const recipes = defineCollection({
       updatedDate: z.coerce.date().optional(),
       heroImage: image().optional(),
       category: z.string(),
-      lang: z.enum(LOCALES).default("de"),
     }),
 });
 
@@ -21,7 +19,6 @@ const pages = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
-    lang: z.enum(LOCALES).default("de"),
   }),
 });
 

@@ -1,7 +1,7 @@
 ---
 title: "Impressum"
 description: "Impressum und rechtliche Angaben"
-lang: "de"
+
 ---
 
 # Impressum

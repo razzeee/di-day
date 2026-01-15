@@ -3,7 +3,7 @@ title: "Firefox Browser"
 description: "Wechsle zu Firefox - dem unabhängigen und datenschutzfreundlichen Browser"
 pubDate: 2026-01-02
 category: "Browser"
-lang: "de"
+
 heroImage: "../../../assets/soup.jpg"
 ---
 

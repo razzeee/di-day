@@ -1,7 +1,7 @@
 ---
 title: "Gemeinsam wechseln"
 description: "Digitale Unabhängigkeit erreicht man am besten gemeinsam."
-lang: "de"
+
 ---
 
 # Gemeinsam wechseln

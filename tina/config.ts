@@ -48,16 +48,6 @@ export default defineConfig({
             label: "Description",
           },
           {
-            type: "string",
-            options: [...LOCALES],
-            name: "lang",
-            label: "Language",
-            required: true,
-            ui: {
-              defaultValue: "de",
-            },
-          },
-          {
             type: "rich-text",
             name: "body",
             label: "Body",
@@ -92,16 +82,6 @@ export default defineConfig({
             type: "string",
             name: "category",
             label: "Category",
-          },
-          {
-            type: "string",
-            options: [...LOCALES],
-            name: "lang",
-            label: "Language",
-            required: true,
-            ui: {
-              defaultValue: "de",
-            },
           },
           {
             type: "image",

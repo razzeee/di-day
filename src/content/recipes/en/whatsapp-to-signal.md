@@ -3,7 +3,7 @@ title: "WhatsApp to Signal"
 description: "Switch from WhatsApp to Signal - the secure and privacy-friendly alternative"
 pubDate: 2026-01-02
 category: "Messenger"
-lang: "en"
+
 heroImage: "../../../assets/cake.jpg"
 ---
 

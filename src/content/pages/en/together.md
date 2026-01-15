@@ -1,7 +1,7 @@
 ---
 title: "Switch Together"
 description: "Digital independence is best achieved together."
-lang: "en"
+
 ---
 
 # Switch Together

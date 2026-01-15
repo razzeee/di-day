@@ -3,7 +3,7 @@ title: "Posteo & Mailbox.org"
 description: "Wechsle zu deutschen, datenschutzfreundlichen E-Mail-Anbietern"
 pubDate: 2026-01-02
 category: "E-Mail"
-lang: "de"
+
 heroImage: "../../../assets/bread.jpg"
 ---
 

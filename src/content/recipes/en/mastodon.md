@@ -3,7 +3,7 @@ title: "Mastodon"
 description: "Switch to Mastodon - the decentralized social network"
 pubDate: 2026-01-06
 category: "Social Media"
-lang: "en"
+
 heroImage: "../../../assets/cookies.jpg"
 ---
 

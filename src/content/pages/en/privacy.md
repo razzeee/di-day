@@ -1,7 +1,7 @@
 ---
 title: "Privacy Policy"
 description: "Privacy policy and information about data protection"
-lang: "en"
+
 ---
 
 # Privacy Policy

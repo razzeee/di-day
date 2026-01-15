@@ -1,7 +1,6 @@
 ---
 title: "Alternativen"
 description: "Viele Wege raus aus Rom - Entdecke Alternativen zu Big Tech"
-lang: "de"
 ---
 
 # Viele Wege raus aus Rom

@@ -3,7 +3,7 @@ title: "Google zu Ecosia"
 description: "Wechsle von Google zu Ecosia - der Suchmaschine, die Bäume pflanzt"
 pubDate: 2026-01-05
 category: "Suchmaschine"
-lang: "de"
+
 heroImage: "../../../assets/bowl.jpg"
 ---
 

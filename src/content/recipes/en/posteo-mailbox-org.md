@@ -3,7 +3,7 @@ title: "Posteo & Mailbox.org"
 description: "Switch to German, privacy-friendly email providers"
 pubDate: 2026-01-02
 category: "Email"
-lang: "en"
+
 heroImage: "../../../assets/bread.jpg"
 ---
 

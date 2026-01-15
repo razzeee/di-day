@@ -3,7 +3,6 @@ title: "Firefox Browser"
 description: "Switch to Firefox - the independent and privacy-friendly browser"
 pubDate: 2026-01-02
 category: "Browser"
-lang: "en"
 heroImage: "../../../assets/soup.jpg"
 ---
 

@@ -3,7 +3,7 @@ title: "Google to Ecosia"
 description: "Switch from Google to Ecosia - the search engine that plants trees"
 pubDate: 2026-01-05
 category: "Search Engine"
-lang: "en"
+
 heroImage: "../../../assets/bowl.jpg"
 ---
 

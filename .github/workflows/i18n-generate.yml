@@ -1,0 +1,43 @@
+name: i18n Generate (PO to Markdown)
+
+on:
+  push:
+    branches:
+      - '**'
+    paths:
+      - 'src/i18n/po/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-content:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          pip install git+https://github.com/PhuNH/markdown-gettext.git
+          sudo apt-get install -y gettext
+
+      - name: Run generation script
+        run: |
+          chmod +x scripts/i18n-generate.sh
+          ./scripts/i18n-generate.sh
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          
+          # Check for changes in the content directories
+          if [[ -n $(git status --porcelain src/content/) ]]; then
+            echo "Changes detected in translated content."
+            git add src/content/pages/ src/content/recipes/
+            git commit -m "chore(i18n): update translated content"
+            git push origin HEAD:${{ github.ref }}
+          else
+            echo "No changes in translated content."
+          fi

@@ -1,58 +1,34 @@
 ---
-title: "Privacy Policy"
-description: "Privacy policy and information about data protection"
+description: Datenschutzerklärung und Informationen zum Datenschutz
+title: Datenschutzerklärung
 
 ---
-
-# Privacy Policy
-
-## 1. Privacy at a Glance
-
-### General Information
-
-The following information provides a simple overview of what happens to your personal data when you visit this website. Personal data is any data that can be used to identify you personally.
-
-### Data Collection on this Website
-
-**Who is responsible for data collection on this website?**
-Data processing on this website is performed by the website operator. Their contact details can be found in the imprint of this website.
-
+# Datenschutzerklärung
+## 1. Datenschutz auf einen Blick
+### Allgemeine Hinweise
+Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.
+### Datenerfassung auf dieser Website
+**Wer ist verantwortlich für die Datenerfassung auf dieser Website?** Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Impressum dieser Website entnehmen.
 ## 2. Hosting
-
-This website is hosted by an external service provider (host). The personal data collected on this website is stored on the host's servers.
-
-## 3. General Notes and Mandatory Information
-
-### Data Protection
-
-The operators of these pages take the protection of your personal data very seriously. We treat your personal data confidentially and in accordance with the statutory data protection regulations and this privacy policy.
-
-### Note on the Responsible Body
-
-The responsible body for data processing on this website is:
-[See Imprint]
-
-## 4. Data Collection on this Website
-
-### Server Log Files
-
-The provider of the pages automatically collects and stores information in so-called server log files, which your browser automatically transmits to us. These are:
-
-- Browser type and browser version
-- Operating system used
+Diese Website wird bei einem externen Dienstleister gehostet (Hoster). Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf den Servern des Hosters gespeichert.
+## 3. Allgemeine Hinweise und Pflichtinformationen
+### Datenschutz
+Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.
+### Hinweis zur verantwortlichen Stelle
+Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist: [Siehe Impressum]
+## 4. Datenerfassung auf dieser Website
+### Server-Log-Dateien
+Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:
+- Browsertyp und Browserversion
+- verwendetes Betriebssystem
 - Referrer URL
-- Hostname of the accessing computer
-- Time of the server request
-- IP address
+- Hostname des zugreifenden Rechners
+- Uhrzeit der Serveranfrage
+- IP-Adresse
 
-### Contact Form / Newsletter
-
-If you send us inquiries via the contact form or newsletter registration, your details from the inquiry form, including the contact details you provided there, will be stored for the purpose of processing the inquiry and in case of follow-up questions.
-
-## 5. Your Rights
-
-You have the right at any time to receive free information about your stored personal data, its origin and recipient and the purpose of data processing, as well as the right to correct or delete this data.
-
-## 6. Objection to Advertising Emails
-
-The use of contact data published as part of the imprint obligation for the purpose of sending unsolicited advertising and information material is hereby prohibited.
+### Kontaktformular / Newsletter
+Wenn Sie uns per Kontaktformular oder Newsletter-Anmeldung Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert.
+## 5. Ihre Rechte
+Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung oder Löschung dieser Daten.
+## 6. Widerspruch gegen Werbe-Mails
+Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit widersprochen.

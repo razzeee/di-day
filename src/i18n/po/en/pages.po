@@ -1,0 +1,340 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-16 03:00+0100\n"
+"PO-Revision-Date: 2026-01-16 02:59+0000\n"
+"Last-Translator: Weblate Admin <nils@sxda.io>\n"
+"Language-Team: English <https://weblate.sxda.io/projects/diday-sxda-io/pages/"
+"en/>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+msgid "Alternativen"
+msgstr ""
+
+msgid "Viele Wege raus aus Rom - Entdecke Alternativen zu Big Tech"
+msgstr ""
+
+msgid "Viele Wege raus aus Rom"
+msgstr "Many ways out of Rome"
+
+msgid ""
+"Es gibt für fast jeden digitalen Dienst datenschutzfreundliche und ethische "
+"Alternativen. Hier findest du eine Übersicht nach Kategorien."
+msgstr ""
+"There are privacy-friendly and ethical alternatives for almost every digital "
+"service. Here you will find an overview by category."
+
+msgid "Alternative Suchmaschinen"
+msgstr "Alternative Search Engines"
+
+msgid "**Ecosia**: Pflanzt Bäume mit Werbeeinnahmen"
+msgstr "**Ecosia**: Plants trees with advertising revenue"
+
+msgid "**DuckDuckGo**: Keine Verfolgung, keine Filterblase"
+msgstr "**DuckDuckGo**: No tracking, no filter bubble"
+
+msgid "**Startpage**: Nutzt Google-Ergebnisse ohne Tracking"
+msgstr "**Startpage**: Uses Google results without tracking"
+
+msgid "**Qwant**: Europäische Suchmaschine mit Datenschutz"
+msgstr "**Qwant**: European search engine with data protection"
+
+msgid "Online-Buchhandel"
+msgstr ""
+
+msgid "**buch7.de**: 75% des Gewinns für soziale Projekte"
+msgstr ""
+
+msgid "**genialokal.de**: Unterstützt lokale Buchhandlungen"
+msgstr ""
+
+msgid "**Lokale Buchläden**: Persönliche Beratung und lokale Unterstützung"
+msgstr ""
+
+msgid "WhatsApp & Co."
+msgstr ""
+
+msgid "**Signal**: Sichere, verschlüsselte Kommunikation"
+msgstr ""
+
+msgid "**Threema**: Schweizer Messenger mit Datenschutz"
+msgstr ""
+
+msgid "**Element**: Dezentraler Messenger auf Matrix-Basis"
+msgstr ""
+
+msgid "Browser"
+msgstr ""
+
+msgid "**Firefox**: Unabhängig und datenschutzfreundlich"
+msgstr ""
+
+msgid "**Brave**: Blockiert Tracker und Werbung"
+msgstr ""
+
+msgid "**LibreWolf**: Firefox-Fork mit noch mehr Datenschutz"
+msgstr ""
+
+msgid "X / Microblogging"
+msgstr ""
+
+msgid "**Mastodon**: Dezentrales soziales Netzwerk"
+msgstr ""
+
+msgid "**Bluesky**: Offenes Protokoll für soziale Medien"
+msgstr ""
+
+msgid "**Pixelfed**: Instagram-Alternative"
+msgstr ""
+
+msgid "E-Mail"
+msgstr ""
+
+msgid "**Posteo**: Anonym, nachhaltig, sicher"
+msgstr ""
+
+msgid "**Mailbox.org**: Deutsche Alternative mit vielen Features"
+msgstr ""
+
+msgid "**Tutanota**: Ende-zu-Ende-verschlüsselt"
+msgstr ""
+
+msgid "**ProtonMail**: Schweizer Anbieter mit Verschlüsselung"
+msgstr ""
+
+msgid "Impressum"
+msgstr ""
+
+msgid "Impressum und rechtliche Angaben"
+msgstr ""
+
+msgid "Angaben gemäß § 5 TMG"
+msgstr ""
+
+msgid "Digital Independence Day [Ihre Adresse] [PLZ Ort]"
+msgstr ""
+
+msgid "Kontakt"
+msgstr ""
+
+msgid "E-Mail: [Ihre E-Mail] Telefon: [Ihre Telefonnummer]"
+msgstr ""
+
+msgid "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV"
+msgstr ""
+
+msgid "[Name] [Adresse] [PLZ Ort]"
+msgstr ""
+
+msgid "Haftungsausschluss"
+msgstr ""
+
+msgid "Haftung für Inhalte"
+msgstr ""
+
+msgid ""
+"Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die "
+"Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch "
+"keine Gewähr übernehmen."
+msgstr ""
+
+msgid "Haftung für Links"
+msgstr ""
+
+msgid ""
+"Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte "
+"wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch "
+"keine Gewähr übernehmen."
+msgstr ""
+
+msgid "Urheberrecht"
+msgstr ""
+
+msgid ""
+"Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten "
+"unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, "
+"Verbreitung und jede Art der Verwertung außerhalb der Grenzen des "
+"Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors "
+"bzw. Erstellers."
+msgstr ""
+
+msgid "Partner"
+msgstr ""
+
+msgid "Über die Partner des Digital Independence Day"
+msgstr ""
+
+msgid ""
+"Ein breites Bündnis von Organisationen aus allen Ecken der Gesellschaft hat "
+"den DI.DAY gestartet."
+msgstr ""
+
+msgid ""
+"Aber das war nur der Anfang: DI.DAY ist für alle da. Der Kreis der "
+"Initiator\\*innen ist nun geschlossen, freut sich aber darüber, wenn weitere "
+"Organisationen, Vereine, Initiativen am DI.DAY mit eigenen Ideen, "
+"Veranstaltungen (gern eintragen unter [termine.di.day](https://"
+"termine.di.day)), Informationsangeboten beteiligen."
+msgstr ""
+
+msgid "Datenschutzerklärung"
+msgstr ""
+
+msgid "Datenschutzerklärung und Informationen zum Datenschutz"
+msgstr ""
+
+msgid "1. Datenschutz auf einen Blick"
+msgstr ""
+
+msgid "Allgemeine Hinweise"
+msgstr ""
+
+msgid ""
+"Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit "
+"Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. "
+"Personenbezogene Daten sind alle Daten, mit denen Sie persönlich "
+"identifiziert werden können."
+msgstr ""
+
+msgid "Datenerfassung auf dieser Website"
+msgstr ""
+
+msgid ""
+"**Wer ist verantwortlich für die Datenerfassung auf dieser Website?** Die "
+"Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. "
+"Dessen Kontaktdaten können Sie dem Impressum dieser Website entnehmen."
+msgstr ""
+
+msgid "2. Hosting"
+msgstr ""
+
+msgid ""
+"Diese Website wird bei einem externen Dienstleister gehostet (Hoster). Die "
+"personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf "
+"den Servern des Hosters gespeichert."
+msgstr ""
+
+msgid "3. Allgemeine Hinweise und Pflichtinformationen"
+msgstr ""
+
+msgid "Datenschutz"
+msgstr ""
+
+msgid ""
+"Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr "
+"ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und "
+"entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser "
+"Datenschutzerklärung."
+msgstr ""
+
+msgid "Hinweis zur verantwortlichen Stelle"
+msgstr ""
+
+msgid ""
+"Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist: "
+"[Siehe Impressum]"
+msgstr ""
+
+msgid "4. Datenerfassung auf dieser Website"
+msgstr ""
+
+msgid "Server-Log-Dateien"
+msgstr ""
+
+msgid ""
+"Der Provider der Seiten erhebt und speichert automatisch Informationen in so "
+"genannten Server-Log-Dateien, die Ihr Browser automatisch an uns "
+"übermittelt. Dies sind:"
+msgstr ""
+
+msgid "Browsertyp und Browserversion"
+msgstr ""
+
+msgid "verwendetes Betriebssystem"
+msgstr ""
+
+msgid "Referrer URL"
+msgstr ""
+
+msgid "Hostname des zugreifenden Rechners"
+msgstr ""
+
+msgid "Uhrzeit der Serveranfrage"
+msgstr ""
+
+msgid "IP-Adresse"
+msgstr ""
+
+msgid "Kontaktformular / Newsletter"
+msgstr ""
+
+msgid ""
+"Wenn Sie uns per Kontaktformular oder Newsletter-Anmeldung Anfragen zukommen "
+"lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen "
+"dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den "
+"Fall von Anschlussfragen bei uns gespeichert."
+msgstr ""
+
+msgid "5. Ihre Rechte"
+msgstr ""
+
+msgid ""
+"Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre "
+"gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den "
+"Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung oder Löschung "
+"dieser Daten."
+msgstr ""
+
+msgid "6. Widerspruch gegen Werbe-Mails"
+msgstr ""
+
+msgid ""
+"Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten "
+"Kontaktdaten zur Übersendung von nicht ausdrücklich angeforderter Werbung "
+"und Informationsmaterialien wird hiermit widersprochen."
+msgstr ""
+
+msgid "Sprich drüber"
+msgstr ""
+
+msgid "Teile deine Erfahrungen mit digitaler Unabhängigkeit."
+msgstr ""
+
+msgid ""
+"Diese Seite befindet sich noch im Aufbau. Hier wirst du bald Tipps und "
+"Materialien finden, wie du das Thema digitale Unabhängigkeit in deinem "
+"Umfeld ansprechen und andere motivieren kannst."
+msgstr ""
+
+msgid ""
+"In der Zwischenzeit kannst du unsere [Wechselrezepte](/de/recipes) entdecken "
+"oder unseren [Newsletter abonnieren](/de/newsletter), um auf dem Laufenden "
+"zu bleiben."
+msgstr ""
+
+msgid "Gemeinsam wechseln"
+msgstr ""
+
+msgid "Digitale Unabhängigkeit erreicht man am besten gemeinsam."
+msgstr ""
+
+msgid ""
+"Diese Seite befindet sich noch im Aufbau. Hier wirst du bald Informationen "
+"darüber finden, wie du dich mit anderen vernetzen kannst, um gemeinsam den "
+"Wechsel zu datenschutzfreundlichen Alternativen zu gestalten."
+msgstr ""
+
+#
+#~ msgid ""
+#~ "title: \"Alternativen\"\n"
+#~ "description: \"Viele Wege raus aus Rom - Entdecke Alternativen zu Big "
+#~ "Tech\""
+#~ msgstr ""
+#~ "title: \"Alternatives\"\n"
+#~ "description: \"Many ways out of Rome – discover alternatives to Big Tech\""

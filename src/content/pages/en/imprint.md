@@ -1,38 +1,19 @@
 ---
-title: "Imprint"
-description: "Imprint and legal information"
+description: Impressum und rechtliche Angaben
+title: Impressum
 
 ---
-
-# Imprint
-
-## Information according to § 5 TMG
-
-Digital Independence Day
-[Your Address]
-[Zip Code City]
-
-## Contact
-
-E-Mail: [Your E-Mail]
-Phone: [Your Phone Number]
-
-## Responsible for content according to § 55 Abs. 2 RStV
-
-[Name]
-[Address]
-[Zip Code City]
-
-## Disclaimer
-
-### Liability for content
-
-The contents of our pages were created with great care. However, we cannot assume any liability for the correctness, completeness, and timeliness of the content.
-
-### Liability for links
-
-Our offer contains links to external websites of third parties, on whose content we have no influence. Therefore, we cannot assume any liability for this foreign content.
-
-### Copyright
-
-The content and works created by the page operators on these pages are subject to German copyright law. Reproduction, processing, distribution, and any kind of exploitation outside the limits of copyright law require the written consent of the respective author or creator.
+# Impressum
+## Angaben gemäß § 5 TMG
+Digital Independence Day [Ihre Adresse] [PLZ Ort]
+## Kontakt
+E-Mail: [Ihre E-Mail] Telefon: [Ihre Telefonnummer]
+## Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
+[Name] [Adresse] [PLZ Ort]
+## Haftungsausschluss
+### Haftung für Inhalte
+Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.
+### Haftung für Links
+Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen.
+### Urheberrecht
+Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.

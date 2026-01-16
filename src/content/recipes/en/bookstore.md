@@ -1,40 +1,33 @@
 ---
-title: "Local Bookstore"
-description: "Switch from Amazon to local bookstores and social alternatives"
-pubDate: 2026-01-02
-category: "Shopping"
-heroImage: "../../../assets/book.jpg"
+category: Shopping
+description: Unterstütze lokale Buchhandlungen statt Amazon
+heroImage: ../../../assets/book.jpg
+pubDate: 2026-01-05
+title: Local Bookstore
+
 ---
-
 # Local Bookstore
-
 Support local businesses and social projects when buying books.
-
 ## Preparation
-
 1. **Search for Local Bookstores**
-
    - Use a search engine or map to find bookstores in your area
-   - Visit them personally and discover the selection
-
-2. **Discover Online Alternatives**
-
-   - Look for bookstores that donate profits or support local shops
-   - Examples: bookshop.org (supports local bookstores)
-
-3. **Second-Hand Alternatives**
-   - Buy used books to save resources
-   - Local second-hand stores or online marketplaces for used books
+   - Many offer online ordering with pickup
+   - Support local businesses and jobs
+2. **Online alternatives**
+   - **buch7.de**: Donates 75% of its profits to social projects
+   - **genialokal.de**: Connects customers with local bookstores
+   - **Thalia, Hugendubel**: German bookstore retailers
+3. **Used books**
+   - **medimops.de**: Used books, movies, games
+   - **booklooker.de**: Marketplace for used books
+   - Local second-hand stores
 
 ## Dessert
+**Library**: Use your local library—many also offer e-book lending services.
 
-**Library**: Use your local library - many also offer e-book lending.
-
-**Book Clubs**: Exchange books with friends or join a book club.
-
+**Reading groups**: Swap books with friends or join a reading group.
 ## Topping
-
-- **Local Economy**: Supports local jobs
-- **Advice**: Personal book recommendations from expert staff
+- **Local economy:** Supports local jobs
+- **Advice**: Personal book recommendations from specialist staff
 - **Sustainability**: Shorter delivery routes, less packaging
-- **Fair Working Conditions**: Better conditions than at large online retailers
+- **Fair working conditions**: Better conditions than at large online retailers

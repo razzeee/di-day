@@ -1,13 +1,11 @@
 ---
-title: "Switch Together"
-description: "Digital independence is best achieved together."
+description: Digitale Unabhängigkeit erreicht man am besten gemeinsam.
+title: Gemeinsam wechseln
 
 ---
+# Gemeinsam wechseln
+Digitale Unabhängigkeit erreicht man am besten gemeinsam.
 
-# Switch Together
+Diese Seite befindet sich noch im Aufbau. Hier wirst du bald Informationen darüber finden, wie du dich mit anderen vernetzen kannst, um gemeinsam den Wechsel zu datenschutzfreundlichen Alternativen zu gestalten.
 
-Digital independence is best achieved together.
-
-This page is currently under construction. Here you will soon find information on how to connect with others to make the switch to privacy-friendly alternatives together.
-
-In the meantime, you can explore our [recipes](/en/recipes) or [subscribe to our newsletter](/en/newsletter) to stay updated.
+In der Zwischenzeit kannst du unsere [Wechselrezepte](/de/recipes) entdecken oder unseren [Newsletter abonnieren](/de/newsletter), um auf dem Laufenden zu bleiben.

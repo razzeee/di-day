@@ -1,0 +1,554 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-16 03:00+0100\n"
+"PO-Revision-Date: 2026-01-16 02:51+0000\n"
+"Last-Translator: Weblate Admin <nils@sxda.io>\n"
+"Language-Team: English <https://weblate.sxda.io/projects/diday-sxda-io/"
+"recipes/en/>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+msgid "Lokaler Buchladen"
+msgstr "Local Bookstore"
+
+msgid "Unterstütze lokale Buchhandlungen statt Amazon"
+msgstr ""
+
+msgid "Shopping"
+msgstr ""
+
+msgid "../../../assets/book.jpg"
+msgstr ""
+
+msgid ""
+"Kaufe Bücher bei lokalen Buchhandlungen oder nutze faire Online-Alternativen."
+msgstr "Support local businesses and social projects when buying books."
+
+msgid "Zubereitung"
+msgstr "Preparation"
+
+msgid "**Lokale Buchhandlung finden**"
+msgstr "**Search for Local Bookstores**"
+
+msgid "Suche nach Buchhandlungen in deiner Nähe"
+msgstr "Use a search engine or map to find bookstores in your area"
+
+msgid "Viele bieten Online-Bestellung mit Abholung an"
+msgstr "Many offer online ordering with pickup"
+
+msgid "Unterstütze damit lokale Geschäfte und Arbeitsplätze"
+msgstr "Support local businesses and jobs"
+
+msgid "**Online-Alternativen**"
+msgstr "**Online alternatives**"
+
+msgid "**buch7.de**: Spendet 75% des Gewinns an soziale Projekte"
+msgstr "**buch7.de**: Donates 75% of its profits to social projects"
+
+msgid "**genialokal.de**: Vermittelt an lokale Buchhandlungen"
+msgstr "**genialokal.de**: Connects customers with local bookstores"
+
+msgid "**Thalia, Hugendubel**: Deutsche Buchhandelsketten"
+msgstr "**Thalia, Hugendubel**: German bookstore retailers"
+
+msgid "**Gebrauchte Bücher**"
+msgstr "**Used books**"
+
+msgid "**medimops.de**: Gebrauchte Bücher, Filme, Spiele"
+msgstr "**medimops.de**: Used books, movies, games"
+
+msgid "**booklooker.de**: Marktplatz für gebrauchte Bücher"
+msgstr "**booklooker.de**: Marketplace for used books"
+
+msgid "Lokale Second-Hand-Läden"
+msgstr "Local second-hand stores"
+
+msgid "Nachtisch"
+msgstr "Dessert"
+
+msgid ""
+"**Bibliothek**: Nutze deine lokale Bibliothek - viele bieten auch E-Book-"
+"Ausleihe an."
+msgstr ""
+"**Library**: Use your local library—many also offer e-book lending services."
+
+msgid ""
+"**Lesekreise**: Tausche Bücher mit Freunden oder tritt einem Lesekreis bei."
+msgstr "**Reading groups**: Swap books with friends or join a reading group."
+
+msgid "Topping"
+msgstr "Topping"
+
+msgid "**Lokale Wirtschaft**: Unterstützt Arbeitsplätze vor Ort"
+msgstr "**Local economy:** Supports local jobs"
+
+msgid "**Beratung**: Persönliche Buchempfehlungen vom Fachpersonal"
+msgstr "**Advice**: Personal book recommendations from specialist staff"
+
+msgid "**Nachhaltigkeit**: Kürzere Lieferwege, weniger Verpackung"
+msgstr "**Sustainability**: Shorter delivery routes, less packaging"
+
+msgid ""
+"**Faire Arbeitsbedingungen**: Bessere Bedingungen als bei großen Online-"
+"Händlern"
+msgstr ""
+"**Fair working conditions**: Better conditions than at large online retailers"
+
+#, fuzzy
+msgid "Firefox Browser"
+msgstr "Firefox Browser"
+
+msgid ""
+"Wechsle zu Firefox - dem unabhängigen und datenschutzfreundlichen Browser"
+msgstr ""
+
+msgid "Browser"
+msgstr ""
+
+msgid "../../../assets/soup.jpg"
+msgstr ""
+
+msgid ""
+"Firefox ist ein quelloffener Browser von Mozilla, der deine Privatsphäre "
+"schützt."
+msgstr ""
+"Firefox is an open-source browser from Mozilla that protects your privacy."
+
+msgid "**Firefox herunterladen**"
+msgstr "**Download Firefox**"
+
+msgid "Besuche [mozilla.org/firefox](https://www.mozilla.org/de/firefox/)"
+msgstr ""
+
+msgid "Lade die passende Version für dein System herunter"
+msgstr ""
+
+msgid "Installiere Firefox"
+msgstr ""
+
+msgid "**Daten importieren**"
+msgstr ""
+
+msgid ""
+"Beim ersten Start bietet Firefox an, Lesezeichen und Passwörter zu "
+"importieren"
+msgstr ""
+
+msgid "Wähle deinen bisherigen Browser aus"
+msgstr ""
+
+msgid "Bestätige den Import"
+msgstr ""
+
+msgid "**Firefox anpassen**"
+msgstr ""
+
+msgid "Melde dich mit einem Firefox-Konto an (optional)"
+msgstr ""
+
+msgid "Passe die Datenschutzeinstellungen an"
+msgstr ""
+
+msgid "Installiere nützliche Add-ons wie uBlock Origin"
+msgstr ""
+
+msgid "**Als Standardbrowser festlegen**"
+msgstr ""
+
+msgid "Firefox fragt beim ersten Start, ob er Standardbrowser werden soll"
+msgstr ""
+
+msgid "Oder: Systemeinstellungen → Standard-Apps → Webbrowser"
+msgstr ""
+
+msgid ""
+"**Sync**: Mit einem Firefox-Konto kannst du Lesezeichen, Passwörter und Tabs "
+"zwischen Geräten synchronisieren."
+msgstr ""
+
+msgid ""
+"**Container**: Firefox bietet \"Container Tabs\", um verschiedene "
+"Identitäten (privat, Arbeit, Shopping) zu trennen."
+msgstr ""
+
+msgid "**Tracking-Schutz**: Blockiert standardmäßig viele Tracker"
+msgstr ""
+
+msgid "**Open Source**: Der Quellcode ist öffentlich einsehbar"
+msgstr ""
+
+msgid ""
+"**Unabhängig**: Firefox wird von der gemeinnützigen Mozilla Foundation "
+"entwickelt"
+msgstr ""
+
+msgid "**Erweiterungen**: Große Auswahl an Datenschutz-Add-ons verfügbar"
+msgstr ""
+
+msgid "Google zu Ecosia"
+msgstr ""
+
+msgid "Wechsle von Google zu Ecosia - der Suchmaschine, die Bäume pflanzt"
+msgstr ""
+
+msgid "Suchmaschine"
+msgstr ""
+
+msgid "../../../assets/bowl.jpg"
+msgstr ""
+
+msgid ""
+"Ecosia ist eine umweltfreundliche Suchmaschine, die mit ihren Werbeeinnahmen "
+"Bäume pflanzt."
+msgstr ""
+
+msgid "**Browser-Erweiterung installieren**"
+msgstr ""
+
+msgid "Besuche [ecosia.org](https://www.ecosia.org)"
+msgstr ""
+
+msgid "Klicke auf \"Ecosia zu [Browser] hinzufügen\""
+msgstr ""
+
+msgid "Bestätige die Installation"
+msgstr ""
+
+msgid "**Als Standardsuchmaschine festlegen**"
+msgstr ""
+
+msgid "**Chrome/Edge**: Einstellungen → Suchmaschine → Ecosia auswählen"
+msgstr ""
+
+msgid "**Firefox**: Einstellungen → Suche → Standardsuchmaschine → Ecosia"
+msgstr ""
+
+msgid "**Safari**: Einstellungen → Suche → Ecosia"
+msgstr ""
+
+msgid "**Mobile App installieren**"
+msgstr ""
+
+msgid "Lade die Ecosia-App aus dem App Store oder Google Play Store"
+msgstr ""
+
+msgid "Oder nutze Ecosia im mobilen Browser"
+msgstr ""
+
+msgid ""
+"**Suchverlauf**: Ecosia speichert deine Suchanfragen nicht dauerhaft. Nach "
+"einer Woche werden alle Daten anonymisiert."
+msgstr ""
+
+msgid ""
+"**Transparenz**: Auf der Ecosia-Website kannst du genau nachverfolgen, wie "
+"viele Bäume bereits gepflanzt wurden."
+msgstr ""
+
+msgid ""
+"**80% der Gewinne für Baumpflanzungen**: Ecosia investiert den Großteil "
+"seiner Gewinne in Aufforstungsprojekte"
+msgstr ""
+
+msgid ""
+"**CO₂-negativ**: Ecosia entfernt mehr CO₂ aus der Atmosphäre, als es "
+"verursacht"
+msgstr ""
+
+msgid "**Datenschutz**: Keine Verkauf von Daten an Dritte"
+msgstr ""
+
+msgid ""
+"**Transparente Finanzberichte**: Monatliche Veröffentlichung aller Einnahmen "
+"und Ausgaben"
+msgstr ""
+
+msgid "Mastodon"
+msgstr ""
+
+msgid "Wechsle zu Mastodon - dem dezentralen sozialen Netzwerk"
+msgstr ""
+
+msgid "Social Media"
+msgstr ""
+
+msgid "../../../assets/cookies.jpg"
+msgstr ""
+
+msgid ""
+"Mastodon ist ein dezentrales soziales Netzwerk ohne Algorithmen und Werbung."
+msgstr ""
+
+msgid "**Server auswählen**"
+msgstr ""
+
+msgid "Besuche [joinmastodon.org/servers](https://joinmastodon.org/servers)"
+msgstr ""
+
+msgid "Wähle einen Server basierend auf deinen Interessen oder deiner Region"
+msgstr ""
+
+msgid "Empfehlung für deutschsprachige Nutzer: mastodon.social, chaos.social"
+msgstr ""
+
+msgid "**Konto erstellen**"
+msgstr ""
+
+msgid "Klicke auf \"Registrieren\" auf dem gewählten Server"
+msgstr ""
+
+msgid "Gib Benutzername, E-Mail und Passwort ein"
+msgstr ""
+
+msgid "Bestätige deine E-Mail-Adresse"
+msgstr ""
+
+msgid "**Profil einrichten**"
+msgstr ""
+
+msgid "Füge ein Profilbild und Header hinzu"
+msgstr ""
+
+msgid "Schreibe eine kurze Bio"
+msgstr ""
+
+msgid "Verlinke deine Website oder andere Profile"
+msgstr ""
+
+msgid "**Leuten folgen**"
+msgstr ""
+
+msgid "Suche nach Hashtags, die dich interessieren"
+msgstr ""
+
+msgid "Folge interessanten Accounts"
+msgstr ""
+
+msgid "Nutze die lokale und föderierte Timeline zur Entdeckung"
+msgstr ""
+
+msgid ""
+"**Apps**: Es gibt viele Apps für Mastodon - z.B. Tusky (Android), Ivory "
+"(iOS), oder nutze die Web-Oberfläche."
+msgstr ""
+
+msgid ""
+"**Umzug**: Du kannst später zu einem anderen Server umziehen und deine "
+"Follower mitnehmen."
+msgstr ""
+
+msgid "**Dezentral**: Kein einzelnes Unternehmen kontrolliert das Netzwerk"
+msgstr ""
+
+msgid "**Chronologische Timeline**: Keine algorithmische Sortierung"
+msgstr ""
+
+msgid "**Open Source**: Der Code ist öffentlich einsehbar"
+msgstr ""
+
+msgid "**Keine Werbung**: Finanziert durch Spenden und Freiwillige"
+msgstr ""
+
+msgid "**Datenschutz**: Du entscheidest, wer deine Beiträge sehen kann"
+msgstr ""
+
+msgid "Posteo & Mailbox.org"
+msgstr ""
+
+msgid "Wechsle zu deutschen, datenschutzfreundlichen E-Mail-Anbietern"
+msgstr ""
+
+msgid "E-Mail"
+msgstr ""
+
+msgid "../../../assets/bread.jpg"
+msgstr ""
+
+msgid "Sichere E-Mail-Anbieter aus Deutschland mit starkem Datenschutz."
+msgstr ""
+
+msgid "Posteo"
+msgstr ""
+
+msgid "Besuche [posteo.de](https://posteo.de)"
+msgstr ""
+
+msgid "Klicke auf \"Jetzt Posteo-Konto erstellen\""
+msgstr ""
+
+msgid "Wähle eine E-Mail-Adresse (1€/Monat)"
+msgstr ""
+
+msgid "**Bezahlung**"
+msgstr ""
+
+msgid "Posteo akzeptiert anonyme Zahlungen (Bargeld, Überweisung)"
+msgstr ""
+
+msgid "Keine Angabe persönlicher Daten erforderlich"
+msgstr ""
+
+msgid "**E-Mail-Client einrichten**"
+msgstr ""
+
+msgid "Nutze die Weboberfläche oder richte einen E-Mail-Client ein"
+msgstr ""
+
+msgid "IMAP: posteo.de:993 (SSL/TLS)"
+msgstr ""
+
+msgid "SMTP: posteo.de:465 (SSL/TLS)"
+msgstr ""
+
+msgid "Mailbox.org"
+msgstr ""
+
+msgid "Besuche [mailbox.org](https://mailbox.org)"
+msgstr ""
+
+msgid "Wähle einen Tarif (ab 1€/Monat)"
+msgstr ""
+
+msgid "Erstelle dein Konto"
+msgstr ""
+
+msgid "**Zusatzfunktionen**"
+msgstr ""
+
+msgid "Kalender und Kontakte inklusive"
+msgstr ""
+
+msgid "Office-Suite verfügbar"
+msgstr ""
+
+msgid "Verschlüsselung mit PGP möglich"
+msgstr ""
+
+msgid ""
+"**Migration**: Beide Anbieter bieten Tools zum Import von E-Mails aus "
+"anderen Postfächern."
+msgstr ""
+
+msgid "**Verschlüsselung**: Nutze PGP für Ende-zu-Ende-verschlüsselte E-Mails."
+msgstr ""
+
+msgid "**Datenschutz**: Server in Deutschland, DSGVO-konform"
+msgstr ""
+
+msgid "**Nachhaltig**: Beide nutzen Ökostrom"
+msgstr ""
+
+msgid "**Keine Werbung**: Werbefrei und tracker-frei"
+msgstr ""
+
+msgid "**Zusatzfunktionen**: Kalender, Kontakte, Cloud-Speicher"
+msgstr ""
+
+msgid "WhatsApp zu Signal"
+msgstr ""
+
+msgid ""
+"Wechsle von WhatsApp zu Signal - der sicheren und datenschutzfreundlichen "
+"Alternative"
+msgstr ""
+
+msgid "Messenger"
+msgstr ""
+
+msgid "../../../assets/cake.jpg"
+msgstr ""
+
+msgid ""
+"Signal ist eine sichere, quelloffene Messaging-App, die deine Privatsphäre "
+"respektiert."
+msgstr ""
+
+msgid "**Signal installieren**"
+msgstr ""
+
+msgid ""
+"Lade Signal aus dem App Store (iOS) oder Google Play Store (Android) herunter"
+msgstr ""
+
+msgid "Oder besuche [signal.org](https://signal.org) für Desktop-Versionen"
+msgstr ""
+
+msgid "**Registrierung**"
+msgstr ""
+
+msgid "Öffne Signal und gib deine Telefonnummer ein"
+msgstr ""
+
+msgid "Bestätige die Nummer mit dem SMS-Code"
+msgstr ""
+
+msgid "Füge einen Namen und ein Profilbild hinzu"
+msgstr ""
+
+msgid "Passe deine Datenschutzeinstellungen an"
+msgstr ""
+
+msgid "**Kontakte informieren**"
+msgstr ""
+
+msgid "Signal findet automatisch Kontakte, die bereits Signal nutzen"
+msgstr ""
+
+msgid "Informiere deine wichtigsten Kontakte über den Wechsel"
+msgstr ""
+
+msgid ""
+"**Gruppen übertragen**: Erstelle deine wichtigsten WhatsApp-Gruppen neu in "
+"Signal und lade die Mitglieder ein."
+msgstr ""
+
+msgid ""
+"**Backup**: Signal bietet verschlüsselte Backups für deine Chats an. "
+"Aktiviere diese Funktion in den Einstellungen."
+msgstr ""
+
+msgid ""
+"**Ende-zu-Ende-Verschlüsselung**: Alle Nachrichten sind standardmäßig "
+"verschlüsselt"
+msgstr ""
+
+msgid "**Keine Werbung**: Signal ist komplett werbefrei"
+msgstr ""
+
+msgid ""
+"**Spenden-finanziert**: Signal wird durch Spenden finanziert, nicht durch "
+"Datenverkauf"
+msgstr ""
+
+#
+#~ msgid ""
+#~ "title: \"Lokaler Buchladen\"\n"
+#~ "description: \"Unterstütze lokale Buchhandlungen statt Amazon\"\n"
+#~ "pubDate: 2026-01-05\n"
+#~ "category: \"Shopping\"\n"
+#~ "heroImage: \"../../../assets/book.jpg\""
+#~ msgstr ""
+#~ "title: \"Local Bookstore\"\n"
+#~ "description: \"Support local book stores instead of Amazon\"\n"
+#~ "pubDate: 2026-01-05\n"
+#~ "category: \"Shopping\"\n"
+#~ "heroImage: \"../../../assets/book.jpg\""
+
+#~ msgid ""
+#~ "title: \"Firefox Browser\" description: \"Wechsle zu Firefox - dem "
+#~ "unabhängigen und datenschutzfreundlichen Browser\" pubDate: 2026-01-02 "
+#~ "category: \"Browser\""
+#~ msgstr ""
+#~ "title: “Firefox Browser” description: “Switch to Firefox - the "
+#~ "independent and privacy-friendly browser” pubDate: 2026-01-02 category: "
+#~ "“Browser”"
+
+#, fuzzy
+#~ msgid "heroImage: \"../../../assets/soup.jpg\""
+#~ msgstr "heroImage: \"../../../assets/soup.jpg\""

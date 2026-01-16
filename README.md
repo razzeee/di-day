@@ -107,3 +107,17 @@ Creates/updates the English (`en`) Markdown pages in `src/content/` based on the
 ```bash
 ./scripts/i18n-generate.sh
 ```
+
+### 4. CI/CD Automation
+
+The project uses GitHub Actions to automate the i18n synchronization, so editors/translators do not need to run these scripts locally.
+
+#### `i18n Extract` Workflow
+*   **Trigger:** Pushes to `src/content/.../de/*.md` (German source changes).
+*   **Action:** Runs the extraction script.
+*   **Result:** Commits updated `.pot` template files back to the repository.
+
+#### `i18n Generate` Workflow
+*   **Trigger:** Pushes to `src/i18n/po/**` (Translation updates, e.g., from Weblate).
+*   **Action:** Runs the generation script.
+*   **Result:** Commits updated translated Markdown files (e.g., `en/*.md`) back to the repository.

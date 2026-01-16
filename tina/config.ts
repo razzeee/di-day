@@ -141,56 +141,63 @@ export default defineConfig({
       {
         name: "faqs",
         label: "FAQs",
-        path: "src/i18n",
+        path: "src/content/faqs",
         format: "json",
+        ui: {
+          allowedActions: {
+            create: false,
+            delete: false,
+          },
+        },
         match: {
-          include: "{de,en}",
+          include: "de",
         },
         fields: [
           {
+            type: "string",
+            name: "title",
+            label: "FAQ Title",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "desc",
+            label: "FAQ Description",
+            required: true,
+          },
+          {
             type: "object",
-            name: "faqs",
-            label: "FAQ Section",
+            name: "items",
+            label: "FAQ Items",
+            list: true,
+            ui: {
+              itemProps: (item) => {
+                return { label: item?.question };
+              },
+            },
             fields: [
               {
                 type: "string",
-                name: "title",
-                label: "FAQ Title",
+                name: "question",
+                label: "Question",
+                required: true,
               },
               {
                 type: "string",
-                name: "desc",
-                label: "FAQ Description",
-              },
-              {
-                type: "object",
-                name: "items",
-                label: "FAQ Items",
-                list: true,
+                name: "answer",
+                label: "Answer",
+                required: true,
                 ui: {
-                  itemProps: (item) => {
-                    return { label: item?.question };
-                  },
+                  component: "textarea",
                 },
-                fields: [
-                  {
-                    type: "string",
-                    name: "question",
-                    label: "Question",
-                    required: true,
-                  },
-                  {
-                    type: "string",
-                    name: "answer",
-                    label: "Answer",
-                    required: true,
-                    ui: {
-                      component: "textarea",
-                    },
-                  },
-                ],
               },
             ],
+          },
+          {
+            type: "string",
+            name: "moreQuestions",
+            label: "More Questions CTA",
+            required: true,
           },
         ],
       },

@@ -33,41 +33,6 @@
         "close": "Close menu",
         "toggle": "Toggle menu"
     },
-    "faqs": {
-        "title": "Frequently Asked Questions",
-        "desc": "Everything you need to know about digital independence",
-        "items": [
-            {
-                "question": "What is Digital Independence Day?",
-                "answer": "Digital Independence Day (DI.DAY) is an initiative that supports people in achieving digital independence. Every first Sunday of the month, we encourage everyone to take a step toward privacy-friendly and ethical digital services."
-            },
-            {
-                "question": "Why should I switch?",
-                "answer": "Big tech corporations collect massive amounts of data, influence our perception through algorithms, and have an enormous impact on our lives. Alternatives offer better privacy, more control over your data, no manipulation by algorithms, and support for open source and ethical businesses."
-            },
-            {
-                "question": "Is switching difficult?",
-                "answer": "No! Our 'recipes' lead you step-by-step through the process. Most switches only take a few minutes."
-            },
-            {
-                "question": "Do alternatives cost money?",
-                "answer": "Some alternatives are free (e.g., Signal, Firefox, Mastodon), others cost a small amount (e.g., Posteo 1€/month). The costs are usually lower than expected and support sustainable business models."
-            },
-            {
-                "question": "Can I take my contacts with me?",
-                "answer": "For most services, yes! Many alternatives offer import functions. With messengers like Signal, you can start parallel to WhatsApp and gradually convince contacts."
-            },
-            {
-                "question": "Do I have to switch everything at once?",
-                "answer": "No! Start with one service that is important to you. Every small step counts. DI.DAY takes place every month - you can switch at your own pace."
-            },
-            {
-                "question": "How can I convince others?",
-                "answer": "Share your positive experiences, explain the benefits (privacy, no advertising, etc.), help others switch, and use our materials for sharing."
-            }
-        ],
-        "moreQuestions": "Further questions? Feel free to contact us!"
-    },
     "partners_page": {
         "partners_title": "Partners",
         "contact_title": "Contact",

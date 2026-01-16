@@ -33,41 +33,6 @@
         "close": "Menü schließen",
         "toggle": "Menü umschalten"
     },
-    "faqs": {
-        "title": "Häufig gestellte Fragen",
-        "desc": "Alles, was du über digitale Unabhängigkeit wissen musst",
-        "items": [
-            {
-                "question": "Was ist der Digital Independence Day?",
-                "answer": "Der Digital Independence Day (DI.DAY) ist eine Initiative, die Menschen dabei unterstützt, digitale Unabhängigkeit zu erlangen. Jeden ersten Sonntag im Monat ermutigen wir dazu, einen Schritt in Richtung datenschutzfreundlicher und ethischer digitaler Dienste zu machen."
-            },
-            {
-                "question": "Warum sollte ich wechseln?",
-                "answer": "Große Tech-Konzerne sammeln massiv Daten, beeinflussen durch Algorithmen unsere Wahrnehmung und haben enormen Einfluss auf unser Leben. Alternativen bieten besseren Datenschutz, mehr Kontrolle über deine Daten, keine Manipulation durch Algorithmen und Unterstützung für Open Source und ethische Unternehmen."
-            },
-            {
-                "question": "Ist der Wechsel schwierig?",
-                "answer": "Nein! Unsere 'Wechselrezepte' führen dich Schritt für Schritt durch den Prozess. Die meisten Wechsel dauern nur wenige Minuten."
-            },
-            {
-                "question": "Kosten die Alternativen Geld?",
-                "answer": "Einige Alternativen sind kostenlos (z.B. Signal, Firefox, Mastodon), andere kosten einen kleinen Betrag (z.B. Posteo 1€/Monat). Die Kosten sind meist geringer als gedacht und unterstützen nachhaltige Geschäftsmodelle."
-            },
-            {
-                "question": "Kann ich meine Kontakte mitnehmen?",
-                "answer": "Bei den meisten Diensten ja! Viele Alternativen bieten Import-Funktionen. Bei Messengern wie Signal kannst du parallel zu WhatsApp starten und nach und nach Kontakte überzeugen."
-            },
-            {
-                "question": "Muss ich alles auf einmal wechseln?",
-                "answer": "Nein! Fang mit einem Dienst an, der dir wichtig ist. Jeder kleine Schritt zählt. Der DI.DAY findet jeden Monat statt - du kannst in deinem eigenen Tempo wechseln."
-            },
-            {
-                "question": "Wie kann ich andere überzeugen?",
-                "answer": "Teile deine positiven Erfahrungen, erkläre die Vorteile (Datenschutz, keine Werbung, etc.), hilf anderen beim Wechsel und nutze unsere Materialien zum Teilen."
-            }
-        ],
-        "moreQuestions": "Weitere Fragen? Kontaktiere uns gerne!"
-    },
     "partners_page": {
         "partners_title": "Partner",
         "contact_title": "Kontakt",

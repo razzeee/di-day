@@ -50,4 +50,19 @@ const snacks = defineCollection({
   }),
 });
 
-export const collections = { recipes, pages, snacks };
+const faqs = defineCollection({
+  loader: glob({ base: "./src/content/faqs", pattern: "*.json" }),
+  schema: z.object({
+    title: z.string(),
+    desc: z.string(),
+    items: z.array(
+      z.object({
+        question: z.string(),
+        answer: z.string(),
+      }),
+    ),
+    moreQuestions: z.string(),
+  }),
+});
+
+export const collections = { recipes, pages, snacks, faqs };

@@ -4,6 +4,8 @@ on:
   # Trigger the workflow every time you push to the `main` branch
   push:
     branches: [ main ]
+    paths-ignore:
+      - 'src/i18n/po/**'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 

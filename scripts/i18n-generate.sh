@@ -1,7 +1,6 @@
 #!/bin/bash
 # Generates translated Markdown files from PO files.
-# Uses 'mdpo' (pip install mdpo).
-# Note: Requires 'mdpo' package, NOT 'translate-toolkit' (which also has po2md command).
+# Uses 'markdown-gettext'.
 
 set -e
 
@@ -12,9 +11,18 @@ SOURCE_LANG="de"
 # Supported target languages. Add more as needed.
 TARGET_LANGS=("en") 
 
-# Check for po2md
-if ! command -v po2md &> /dev/null; then
-    echo "Error: po2md command not found."
+# Check for python environment
+if [ -f ".venv/bin/python" ]; then
+    PYTHON=".venv/bin/python"
+    MDGETTEXT=".venv/bin/markdown-gettext"
+else
+    PYTHON="python3"
+    MDGETTEXT="markdown-gettext"
+fi
+
+# Check for markdown-gettext
+if ! command -v $MDGETTEXT &> /dev/null && [ ! -f "$MDGETTEXT" ]; then
+    echo "Error: markdown-gettext command not found."
     exit 1
 fi
 
@@ -43,12 +51,9 @@ for lang in "${TARGET_LANGS[@]}"; do
         
         for source_file in "$SRC_DIR/pages/$SOURCE_LANG"/*.md; do
             filename=$(basename "$source_file")
+            dest_file="$DEST_DIR/$filename"
             
-            po2md "$source_file" \
-                --po-files "$PAGES_PO" \
-                --save "$DEST_DIR/$filename" \
-                --quiet \
-                --wrapwidth 0
+            $MDGETTEXT generate "$source_file" "$PAGES_PO" "$dest_file"
         done
     else
         echo "    Skipping Pages (PO file not found: $PAGES_PO)"
@@ -63,12 +68,9 @@ for lang in "${TARGET_LANGS[@]}"; do
         
         for source_file in "$SRC_DIR/recipes/$SOURCE_LANG"/*.md; do
             filename=$(basename "$source_file")
+            dest_file="$DEST_DIR/$filename"
             
-            po2md "$source_file" \
-                --po-files "$RECIPES_PO" \
-                --save "$DEST_DIR/$filename" \
-                --quiet \
-                --wrapwidth 0
+            $MDGETTEXT generate "$source_file" "$RECIPES_PO" "$dest_file"
         done
     else
         echo "    Skipping Recipes (PO file not found: $RECIPES_PO)"

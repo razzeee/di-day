@@ -1,11 +1,9 @@
-***
+---
+description: Digitale Unabhängigkeit erreicht man am besten gemeinsam.
+title: Gemeinsam wechseln
 
-title: "Gemeinsam wechseln" description: "Digitale Unabhängigkeit erreicht man am besten gemeinsam."
-
-***
-
+---
 # Gemeinsam wechseln
-
 Digitale Unabhängigkeit erreicht man am besten gemeinsam.
 
 Diese Seite befindet sich noch im Aufbau. Hier wirst du bald Informationen darüber finden, wie du dich mit anderen vernetzen kannst, um gemeinsam den Wechsel zu datenschutzfreundlichen Alternativen zu gestalten.

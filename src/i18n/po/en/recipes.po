@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-16 00:45+0000\n"
-"PO-Revision-Date: 2026-01-16 00:54+0000\n"
+"PO-Revision-Date: 2026-01-16 02:51+0000\n"
 "Last-Translator: Weblate Admin <nils@sxda.io>\n"
-"Language-Team: English <https://weblate.sxda.io/projects/sxda-di-day/recipes/"
-"en/>\n"
+"Language-Team: English <https://weblate.sxda.io/projects/diday-sxda-io/"
+"recipes/en/>\n"
 "Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -136,24 +136,29 @@ msgid ""
 "unabhängigen und datenschutzfreundlichen Browser\" pubDate: 2026-01-02 "
 "category: \"Browser\""
 msgstr ""
+"title: “Firefox Browser” description: “Switch to Firefox - the independent "
+"and privacy-friendly browser” pubDate: 2026-01-02 category: “Browser”"
 
 #: src/content/recipes/de/firefox.md:block 2 (header)
+#, fuzzy
 msgid "heroImage: \"../../../assets/soup.jpg\""
-msgstr ""
+msgstr "heroImage: \"../../../assets/soup.jpg\""
 
 #: src/content/recipes/de/firefox.md:block 3 (header)
+#, fuzzy
 msgid "Firefox Browser"
-msgstr ""
+msgstr "Firefox Browser"
 
 #: src/content/recipes/de/firefox.md:block 4 (paragraph)
 msgid ""
 "Firefox ist ein quelloffener Browser von Mozilla, der deine Privatsphäre "
 "schützt."
 msgstr ""
+"Firefox is an open-source browser from Mozilla that protects your privacy."
 
 #: src/content/recipes/de/firefox.md:block 6 (ordered list)
 msgid "**Firefox herunterladen**"
-msgstr ""
+msgstr "**Download Firefox**"
 
 #: src/content/recipes/de/firefox.md:block 6 (ordered list)
 msgid "Besuche [mozilla.org/firefox](https://www.mozilla.org/de/firefox/)"

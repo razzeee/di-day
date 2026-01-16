@@ -12,11 +12,11 @@
         <body>
             <termEntry id="Als Teil eines Rezepts">
                 <langSet xml:lang="de"><tig><term>Zubereitung</term></tig></langSet>
-                <langSet xml:lang="en"><tig><term>Preparation</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term></term></tig></langSet>
             </termEntry>
             <termEntry id="Als Teil eines Rezepts">
                 <langSet xml:lang="de"><tig><term>Nachtisch</term></tig></langSet>
-                <langSet xml:lang="en"><tig><term>Dessert</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term></term></tig></langSet>
             </termEntry>
         </body>
     </text>

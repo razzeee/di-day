@@ -13,19 +13,25 @@ Ecosia ist eine umweltfreundliche Suchmaschine, die mit ihren Werbeeinnahmen Bä
 1. **Browser-Erweiterung installieren**
 
    - Besuche [ecosia.org](https://www.ecosia.org)
+
    - Klicke auf "Ecosia zu [Browser] hinzufügen"
+
    - Bestätige die Installation
 
 1. **Als Standardsuchmaschine festlegen**
 
    - **Chrome/Edge**: Einstellungen → Suchmaschine → Ecosia auswählen
+
    - **Firefox**: Einstellungen → Suche → Standardsuchmaschine → Ecosia
+
    - **Safari**: Einstellungen → Suche → Ecosia
 
 1. **Mobile App installieren**
 
    - Lade die Ecosia-App aus dem App Store oder Google Play Store
+
    - Oder nutze Ecosia im mobilen Browser
+
 
 ## Dessert
 
@@ -36,6 +42,9 @@ Ecosia ist eine umweltfreundliche Suchmaschine, die mit ihren Werbeeinnahmen Bä
 ## Topping
 
 - **80% der Gewinne für Baumpflanzungen**: Ecosia investiert den Großteil seiner Gewinne in Aufforstungsprojekte
+
 - **CO₂-negativ**: Ecosia entfernt mehr CO₂ aus der Atmosphäre, als es verursacht
+
 - **Datenschutz**: Keine Verkauf von Daten an Dritte
+
 - **Transparente Finanzberichte**: Monatliche Veröffentlichung aller Einnahmen und Ausgaben

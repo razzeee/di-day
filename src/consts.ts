@@ -3,4 +3,9 @@
 
 export const DEFAULT_LOCALE = "de";
 export const LOCALES = ["de", "en"] as const;
-export type Locale = (typeof LOCALES)[number];
+export type LANG = (typeof LOCALES)[number];
+
+export const LOCALE_MAP: { [key: string]: string } = {
+    de: "de-DE",
+    en: "en-US",
+};

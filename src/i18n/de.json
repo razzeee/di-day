@@ -25,7 +25,6 @@
         "prep": "Zubereitung",
         "dessert": "Nachtisch",
         "topping": "Topping",
-        "locale": "de-DE",
         "see": "Rezept ansehen →"
     },
     "menu": {
@@ -57,7 +56,14 @@
         "together_title": "Gemeinsam sind wir stärker",
         "together_desc": "Jeder kleine Schritt zählt. Teile deine Erfahrungen und hilf anderen beim Wechsel.",
         "together_cta": "Gemeinsam wechseln",
-        "talk_cta": "Sprich drüber"
+        "talk_cta": "Sprich drüber",
+        "events_title": "Kommende Events",
+        "events_desc": "Finde Digital Independence Day Events in deiner Nähe und trete unserer Bewegung bei.",
+        "events_loading": "Karte wird geladen...",
+        "events_error_loading": "Fehler beim Laden der Events",
+        "events_not_found": "Keine Events gefunden",
+        "events_more_info": "Mehr Info",
+        "events_count": "{count} Events werden auf der Karte angezeigt"
     },
     "dates": {
         "title": "Termine",

@@ -5,6 +5,7 @@ import { Image } from "astro:assets";
 import { getRelativeLocaleUrl } from "astro:i18n";
 import de from "../i18n/de.json";
 import en from "../i18n/en.json";
+import { LOCALE_MAP } from "../consts";
 
 type Props = CollectionEntry<"recipes">["data"] & {
   slug: string;
@@ -115,7 +116,7 @@ const t = ui[lang as "de" | "en"] || de;
       <div class="flex items-center gap-4 mb-4">
         <time class="text-gray-500 dark:text-gray-400 text-sm">
           {
-            pubDate.toLocaleDateString(t.recipe.locale, {
+            pubDate.toLocaleDateString(LOCALE_MAP[lang] || LOCALE_MAP.de, {
               year: "numeric",
               month: "long",
               day: "numeric",

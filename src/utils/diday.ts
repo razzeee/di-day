@@ -1,3 +1,5 @@
+import { LOCALE_MAP } from "../consts";
+
 export function getNextDIDayDate(referenceDate: Date = new Date()): Date {
     const nextMonth = new Date(
         referenceDate.getFullYear(),
@@ -20,12 +22,7 @@ export function formatDIDayDate(date: Date, lang: string = "de"): string {
         year: "numeric",
     };
 
-    const localeMap: { [key: string]: string } = {
-        de: "de-DE",
-        en: "en-US",
-    };
-
-    return date.toLocaleDateString(localeMap[lang] || localeMap.de, options);
+    return date.toLocaleDateString(LOCALE_MAP[lang] || LOCALE_MAP.de, options);
 }
 
 export function getNextDIDayInfo(lang: string = "de", referenceDate?: Date) {

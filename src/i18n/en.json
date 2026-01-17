@@ -25,7 +25,6 @@
         "prep": "Preparation",
         "dessert": "Dessert",
         "topping": "Topping",
-        "locale": "en-US",
         "see": "View recipe →"
     },
     "menu": {
@@ -57,7 +56,14 @@
         "together_title": "Together we are stronger",
         "together_desc": "Every small step counts. Share your experiences and help others switch.",
         "together_cta": "Switch together",
-        "talk_cta": "Talk about it"
+        "talk_cta": "Talk about it",
+        "events_title": "Upcoming Events",
+        "events_desc": "Find Digital Independence Day events near you and join our movement.",
+        "events_loading": "Loading map...",
+        "events_error_loading": "Error loading events",
+        "events_not_found": "No events found",
+        "events_more_info": "More Info",
+        "events_count": "{count} events shown on the map"
     },
     "dates": {
         "title": "Dates",

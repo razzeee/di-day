@@ -1,25 +1,43 @@
 ---
-import { getCollection, render } from "astro:content";
+import { getCollection } from "astro:content";
 import RecipeLayout from "../../../layouts/RecipeLayout.astro";
+import { LOCALES } from "../../../consts";
 
 export async function getStaticPaths() {
-  const recipes = await getCollection("recipes");
-  return recipes.map((recipe) => {
-    const lang = recipe.id.split("/")[0];
-    const slug = recipe.id
-      .replace(new RegExp(`^${lang}/`), "")
-      .replace(/\.md$/, "");
-    return {
-      params: { lang, slug },
-      props: { entry: recipe },
-    };
+  const recipesCollection = await getCollection("recipes");
+
+  const paths: any[] = [];
+
+  LOCALES.forEach((lang) => {
+    const recipesData = recipesCollection.find((r) => r.id === lang);
+    const recipes = recipesData?.data.recipes || [];
+    recipes.forEach((recipe: any) => {
+      paths.push({
+        params: { lang, slug: recipe.id },
+        props: { recipe, lang },
+      });
+    });
   });
+
+  return paths;
 }
 
-const { entry } = Astro.props;
-const { Content } = await render(entry);
+const { recipe, lang } = Astro.props;
 ---
 
-<RecipeLayout {...entry.data} slug={entry.id}>
-  <Content />
-</RecipeLayout>
+<RecipeLayout
+  title={recipe.title}
+  description={recipe.description}
+  pubDate={new Date(recipe.pubDate)}
+  category={recipe.category}
+  heroImage={recipe.heroImage}
+  slug={recipe.id}
+  time={recipe.time}
+  difficulty={recipe.difficulty}
+  ingredients={recipe.ingredients}
+  prep={recipe.prep}
+  dessert={recipe.dessert}
+  topping={recipe.topping}
+  lang={lang}
+/>
+

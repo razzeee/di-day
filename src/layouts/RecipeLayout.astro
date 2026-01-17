@@ -1,23 +1,55 @@
 ---
-import type { CollectionEntry } from "astro:content";
 import BaseLayout from "./BaseLayout.astro";
-import { Image } from "astro:assets";
 import { getRelativeLocaleUrl } from "astro:i18n";
 import de from "../i18n/de.json";
 import en from "../i18n/en.json";
 import { LOCALE_MAP } from "../consts";
 
-type Props = CollectionEntry<"recipes">["data"] & {
+// Simple markdown converter function
+function markdownToHtml(text: string): string {
+  if (!text) return '';
+  // Convert markdown bold **text**
+  text = text.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  // Convert markdown links [text](url)
+  text = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-primary-600 dark:text-primary-400 hover:underline">$1</a>');
+  // Convert newlines to <br>
+  text = text.replace(/\n/g, '<br />');
+  // Convert bullet points - item
+  text = text.replace(/^- (.+)$/gm, '<li>$1</li>');
+  text = text.replace(/(<li>.*<\/li>)/s, '<ul class="list-disc list-inside">$1</ul>');
+  return text;
+}
+
+interface Props {
+  title: string;
+  descriptions: Array<{ title: string; description: string }>;
+  pubDate: Date;
+  category: string;
+  heroImage?: string;
   slug: string;
-};
+  time?: string;
+  difficulty?: string;
+  ingredients?: string[];
+  prep: Array<{ title: string; description: string }>;
+  dessert: string;
+  topping: string;
+  lang: string;
+}
 
 const {
   title,
-  description,
+  descriptions,
   pubDate,
   category,
   heroImage,
-  lang = Astro.currentLocale || "de",
+  slug,
+  time,
+  difficulty,
+  ingredients,
+  prep,
+  dessert,
+  topping,
+  lang,
 } = Astro.props;
 
 const ui = { de, en };
@@ -26,19 +58,23 @@ const t = ui[lang as "de" | "en"] || de;
 
 <BaseLayout
   title={`${title} | Digital Independence Day`}
-  description={description}
+  description={descriptions?.[0]?.description || title}
   lang={lang}
 >
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article" slot="head" />
   <meta property="og:url" content={Astro.url} slot="head" />
   <meta property="og:title" content={title} slot="head" />
-  <meta property="og:description" content={description} slot="head" />
+  <meta
+    property="og:description"
+    content={descriptions?.[0]?.description || title}
+    slot="head"
+  />
   {
     heroImage && (
       <meta
         property="og:image"
-        content={`https://di.day${heroImage.src}`}
+        content={`https://di.day${heroImage}`}
         slot="head"
       />
     )
@@ -48,12 +84,16 @@ const t = ui[lang as "de" | "en"] || de;
   <meta property="twitter:card" content="summary_large_image" slot="head" />
   <meta property="twitter:url" content={Astro.url} slot="head" />
   <meta property="twitter:title" content={title} slot="head" />
-  <meta property="twitter:description" content={description} slot="head" />
+  <meta
+    property="twitter:description"
+    content={descriptions?.[0]?.description || title}
+    slot="head"
+  />
   {
     heroImage && (
       <meta
         property="twitter:image"
-        content={`https://di.day${heroImage.src}`}
+        content={`https://di.day${heroImage}`}
         slot="head"
       />
     )
@@ -67,13 +107,13 @@ const t = ui[lang as "de" | "en"] || de;
       "@context": "https://schema.org",
       "@type": "HowTo",
       name: title,
-      description: description,
+      description: descriptions?.[0]?.description || title,
       datePublished: pubDate.toISOString(),
-      image: heroImage ? `https://di.day${heroImage.src}` : undefined,
+      image: heroImage ? `https://di.day${heroImage}` : undefined,
       step: [
         {
           "@type": "HowToSection",
-          name: t.recipe.prep,
+          name: prep?.[0]?.title || t.recipe.prep,
           position: 1,
         },
         {
@@ -103,13 +143,80 @@ const t = ui[lang as "de" | "en"] || de;
           class="mb-8 rounded-2xl overflow-hidden"
           transition:name={`recipe-image-${title}`}
         >
-          <Image src={heroImage} alt={title} class="w-full h-auto" />
+          <img src={heroImage} alt={title} class="w-full h-auto" />
         </div>
       )
     }
 
+    <h1 class="text-4xl md:text-5xl font-display font-bold mb-4 text-gray-900 dark:text-gray-100">
+      {title}
+    </h1>
+
+    {(time || difficulty || ingredients) && (
+      <div class="mb-8 p-6 bg-gray-50 dark:bg-gray-800 rounded-lg">
+        {time && (
+          <div class="mb-4">
+            <h3 class="font-semibold text-gray-900 dark:text-gray-100 mb-2">
+              {lang === 'de' ? 'Zubereitungszeit:' : 'Preparation Time:'}
+            </h3>
+            <p class="text-gray-700 dark:text-gray-300">{time}</p>
+          </div>
+        )}
+        {difficulty && (
+          <div class="mb-4">
+            <h3 class="font-semibold text-gray-900 dark:text-gray-100 mb-2">
+              {lang === 'de' ? 'Schwierigkeit:' : 'Difficulty:'}
+            </h3>
+            <p class="text-gray-700 dark:text-gray-300">{difficulty}</p>
+          </div>
+        )}
+        {ingredients && ingredients.length > 0 && (
+          <div>
+            <h3 class="font-semibold text-gray-900 dark:text-gray-100 mb-2">
+              {lang === 'de' ? 'Zutaten:' : 'Ingredients:'}
+            </h3>
+            <ol class="list-decimal list-inside space-y-1 text-gray-700 dark:text-gray-300">
+              {ingredients.map((ingredient) => (
+                <li>{ingredient}</li>
+              ))}
+            </ol>
+          </div>
+        )}
+      </div>
+    )}
+
     <div class="prose prose-lg dark:prose-invert max-w-none">
-      <slot />
+      {
+        prep.map((section, index) => (
+          <section class="mb-8">
+            <h2 class="text-2xl font-display font-bold mb-4">{index + 1}. {section.title}</h2>
+            <div
+              class="recipe-content"
+              set:html={markdownToHtml(section.description)}
+            />
+          </section>
+        ))
+      }
+
+      {dessert && (
+        <section class="mb-8">
+          <h2 class="text-2xl font-display font-bold mb-4">{t.recipe.dessert}</h2>
+          <div
+            class="recipe-content"
+            set:html={markdownToHtml(dessert)}
+          />
+        </section>
+      )}
+
+      {topping && (
+        <section class="mb-8">
+          <h2 class="text-2xl font-display font-bold mb-4">{t.recipe.topping}</h2>
+          <div
+            class="recipe-content"
+            set:html={markdownToHtml(topping)}
+          />
+        </section>
+      )}
     </div>
 
     <div class="mt-8">
@@ -164,5 +271,13 @@ const t = ui[lang as "de" | "en"] || de;
 
   .prose :global(strong) {
     @apply font-semibold text-gray-900 dark:text-gray-100;
+  }
+
+  .recipe-content :global(strong) {
+    @apply font-semibold text-gray-900 dark:text-gray-100;
+  }
+
+  .recipe-content :global(a) {
+    @apply text-primary-600 dark:text-primary-400 hover:underline;
   }
 </style>

@@ -58,41 +58,140 @@ export default defineConfig({
       {
         name: "recipes",
         label: "Recipes",
-        path: "src/content/recipes/de",
-        format: "md",
+        path: "src/content/recipes",
+        format: "json",
+        ui: {
+          allowedActions: {
+            create: false,
+            delete: false,
+          },
+        },
+        match: {
+          include: "de",
+        },
         fields: [
           {
             type: "string",
             name: "title",
             label: "Title",
-            isTitle: true,
             required: true,
           },
           {
-            type: "string",
+            type: "rich-text",
             name: "description",
             label: "Description",
+            isBody: false,
+            required: true,
           },
           {
-            type: "datetime",
-            name: "pubDate",
-            label: "Publication Date",
-          },
-          {
-            type: "string",
-            name: "category",
-            label: "Category",
-          },
-          {
-            type: "image",
-            name: "heroImage",
-            label: "Hero Image",
-          },
-          {
-            type: "rich-text",
-            name: "body",
-            label: "Body",
-            isBody: true,
+            type: "object",
+            name: "recipes",
+            label: "Recipes",
+            list: true,
+            ui: {
+              itemProps: (item) => {
+                return { label: item?.title };
+              },
+            },
+            fields: [
+              {
+                type: "string",
+                name: "id",
+                label: "ID",
+                required: true,
+              },
+              {
+                type: "string",
+                name: "title",
+                label: "Title",
+                isTitle: true,
+                required: true,
+              },
+              {
+                type: "rich-text",
+                name: "description",
+                label: "Description",
+                isBody: false,
+                required: true,
+              },
+              {
+                type: "string",
+                name: "pubDate",
+                label: "Publication Date",
+                required: true,
+              },
+              {
+                type: "string",
+                name: "category",
+                label: "Category",
+                required: true,
+              },
+              {
+                type: "image",
+                name: "heroImage",
+                label: "Hero Image",
+                required: true,
+              },
+              {
+                type: "string",
+                name: "time",
+                label: "Preparation Time",
+                required: false,
+              },
+              {
+                type: "string",
+                name: "difficulty",
+                label: "Difficulty",
+                required: false,
+              },
+              {
+                type: "string",
+                name: "ingredients",
+                label: "Ingredients",
+                list: true,
+                required: false,
+              },
+              {
+                type: "object",
+                name: "prep",
+                label: "Preparation",
+                list: true,
+                ui: {
+                  itemProps: (item) => {
+                    return { label: item?.title };
+                  },
+                },
+                fields: [
+                  {
+                    type: "string",
+                    name: "title",
+                    label: "Section Title",
+                    required: true,
+                  },
+                  {
+                    type: "rich-text",
+                    name: "description",
+                    label: "Content",
+                    isBody: false,
+                    required: true,
+                  },
+                ],
+              },
+              {
+                type: "rich-text",
+                name: "dessert",
+                label: "Dessert",
+                isBody: false,
+                required: true,
+              },
+              {
+                type: "rich-text",
+                name: "topping",
+                label: "Topping",
+                isBody: false,
+                required: true,
+              },
+            ],
           },
         ],
       },
@@ -160,7 +259,7 @@ export default defineConfig({
             required: true,
           },
           {
-            type: "string",
+            type: "rich-text",
             name: "desc",
             label: "FAQ Description",
             required: true,
@@ -183,18 +282,15 @@ export default defineConfig({
                 required: true,
               },
               {
-                type: "string",
+                type: "rich-text",
                 name: "answer",
                 label: "Answer",
                 required: true,
-                ui: {
-                  component: "textarea",
-                },
               },
             ],
           },
           {
-            type: "string",
+            type: "rich-text",
             name: "moreQuestions",
             label: "More Questions CTA",
             required: true,
@@ -223,7 +319,7 @@ export default defineConfig({
             required: true,
           },
           {
-            type: "string",
+            type: "rich-text",
             name: "description",
             label: "Description",
             required: true,
@@ -252,12 +348,9 @@ export default defineConfig({
                 required: true,
               },
               {
-                type: "string",
+                type: "rich-text",
                 name: "description",
                 label: "Group Description",
-                ui: {
-                  component: "textarea",
-                },
               },
               {
                 type: "object",
@@ -283,7 +376,7 @@ export default defineConfig({
                     required: true,
                   },
                   {
-                    type: "string",
+                    type: "rich-text",
                     name: "content",
                     label: "Content",
                     required: true,

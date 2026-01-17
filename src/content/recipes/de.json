@@ -1,0 +1,176 @@
+{
+  "title": "Wechselrezepte",
+  "description": "Schritt-für-Schritt Anleitungen zum Wechsel zu digitaler Unabhängigkeit",
+  "recipes": [
+    {
+      "id": "firefox",
+      "title": "Firefox Browser",
+      "pubDate": "2026-01-02",
+      "category": "Browser",
+      "heroImage": "/images/recipes/soup.jpg",
+      "prep": [
+        {
+          "title": "Firefox herunterladen",
+          "description": "Besuche [mozilla.org/firefox](https://www.mozilla.org/de/firefox/)\n   - Lade die passende Version für dein System herunter\n   - Installiere Firefox"
+        },
+        {
+          "title": "Daten importieren",
+          "description": "Beim ersten Start bietet Firefox an, Lesezeichen und Passwörter zu importieren\n   - Wähle deinen bisherigen Browser aus\n   - Bestätige den Import"
+        },
+        {
+          "title": "Firefox anpassen",
+          "description": "Melde dich mit einem Firefox-Konto an (optional)\n   - Passe die Datenschutzeinstellungen an\n   - Installiere nützliche Add-ons wie uBlock Origin"
+        },
+        {
+          "title": "Als Standardbrowser festlegen",
+          "description": "Firefox fragt beim ersten Start, ob er Standardbrowser werden soll\n   - Oder: Systemeinstellungen → Standard-Apps → Webbrowser"
+        }
+      ],
+      "dessert": "**Sync**: Mit einem Firefox-Konto kannst du Lesezeichen, Passwörter und Tabs zwischen Geräten synchronisieren.\n\n**Container**: Firefox bietet \"Container Tabs\", um verschiedene Identitäten (privat, Arbeit, Shopping) zu trennen.",
+      "topping": "- **Tracking-Schutz**: Blockiert standardmäßig viele Tracker\n- **Open Source**: Der Quellcode ist öffentlich einsehbar\n- **Unabhängig**: Firefox wird von der gemeinnützigen Mozilla Foundation entwickelt\n- **Erweiterungen**: Große Auswahl an Datenschutz-Add-ons verfügbar",
+      "description": "Wechsle zu Firefox - dem unabhängigen und datenschutzfreundlichen Browser"
+    },
+    {
+      "id": "posteo-mailbox-org",
+      "title": "Posteo & Mailbox.org",
+      "pubDate": "2026-01-02",
+      "category": "E-Mail",
+      "heroImage": "/images/recipes/bread.jpg",
+      "prep": [
+        {
+          "title": "Konto erstellen",
+          "description": "Besuche [posteo.de](https://posteo.de)\n   - Klicke auf \"Jetzt Posteo-Konto erstellen\"\n   - Wähle eine E-Mail-Adresse (1€/Monat)"
+        },
+        {
+          "title": "Bezahlung",
+          "description": "Posteo akzeptiert anonyme Zahlungen (Bargeld, Überweisung)\n   - Keine Angabe persönlicher Daten erforderlich"
+        },
+        {
+          "title": "E-Mail-Client einrichten",
+          "description": "Nutze die Weboberfläche oder richte einen E-Mail-Client ein\n   - IMAP: posteo.de:993 (SSL/TLS)\n   - SMTP: posteo.de:465 (SSL/TLS)\n\n### Mailbox.org"
+        },
+        {
+          "title": "Konto erstellen",
+          "description": "Besuche [mailbox.org](https://mailbox.org)\n   - Wähle einen Tarif (ab 1€/Monat)\n   - Erstelle dein Konto"
+        },
+        {
+          "title": "Zusatzfunktionen",
+          "description": "Kalender und Kontakte inklusive\n   - Office-Suite verfügbar\n   - Verschlüsselung mit PGP möglich"
+        }
+      ],
+      "dessert": "**Migration**: Beide Anbieter bieten Tools zum Import von E-Mails aus anderen Postfächern.\n\n**Verschlüsselung**: Nutze PGP für Ende-zu-Ende-verschlüsselte E-Mails.",
+      "topping": "- **Datenschutz**: Server in Deutschland, DSGVO-konform\n- **Nachhaltig**: Beide nutzen Ökostrom\n- **Keine Werbung**: Werbefrei und tracker-frei\n- **Zusatzfunktionen**: Kalender, Kontakte, Cloud-Speicher",
+      "description": "Wechsle zu deutschen, datenschutzfreundlichen E-Mail-Anbietern",
+      "time": "45 Minuten (plus Nachlaufzeit)",
+      "difficulty": "Fortgeschritten (Meisterklasse der Unabhängigkeit!)",
+      "ingredients": [
+        "Ein Euro pro Monat.",
+        "Ein Account zum Beispiel bei Posteo.de (grün, sicher, anonym), Mailbox.org, Proton.me (aus der Schweiz, starke Verschlüsselung) oder Tuta (konsequent verschlüsselt, aus Hannover)."
+      ]
+    },
+    {
+      "id": "whatsapp-to-signal",
+      "title": "WhatsApp zu Signal",
+      "pubDate": "2026-01-02",
+      "category": "Messenger",
+      "heroImage": "/images/recipes/cake.jpg",
+      "prep": [
+        {
+          "title": "Signal installieren",
+          "description": "Lade Signal aus dem App Store (iOS) oder Google Play Store (Android) herunter\n   - Oder besuche [signal.org](https://signal.org) für Desktop-Versionen"
+        },
+        {
+          "title": "Registrierung",
+          "description": "Öffne Signal und gib deine Telefonnummer ein\n   - Bestätige die Nummer mit dem SMS-Code"
+        },
+        {
+          "title": "Profil einrichten",
+          "description": "Füge einen Namen und ein Profilbild hinzu\n   - Passe deine Datenschutzeinstellungen an"
+        },
+        {
+          "title": "Kontakte informieren",
+          "description": "Signal findet automatisch Kontakte, die bereits Signal nutzen\n   - Informiere deine wichtigsten Kontakte über den Wechsel"
+        }
+      ],
+      "dessert": "**Gruppen übertragen**: Erstelle deine wichtigsten WhatsApp-Gruppen neu in Signal und lade die Mitglieder ein.\n\n**Backup**: Signal bietet verschlüsselte Backups für deine Chats an. Aktiviere diese Funktion in den Einstellungen.",
+      "topping": "- **Ende-zu-Ende-Verschlüsselung**: Alle Nachrichten sind standardmäßig verschlüsselt\n- **Keine Werbung**: Signal ist komplett werbefrei\n- **Open Source**: Der Quellcode ist öffentlich einsehbar\n- **Spenden-finanziert**: Signal wird durch Spenden finanziert, nicht durch Datenverkauf",
+      "description": "Wechsle von WhatsApp zu Signal - der sicheren und datenschutzfreundlichen Alternative"
+    },
+    {
+      "id": "google-to-ecosia",
+      "title": "Google zu Ecosia",
+      "pubDate": "2026-01-05",
+      "category": "Suchmaschine",
+      "heroImage": "/images/recipes/bowl.jpg",
+      "prep": [
+        {
+          "title": "Browser-Erweiterung installieren",
+          "description": "Besuche [ecosia.org](https://www.ecosia.org)\n   - Klicke auf \"Ecosia zu [Browser] hinzufügen\"\n   - Bestätige die Installation"
+        },
+        {
+          "title": "Als Standardsuchmaschine festlegen",
+          "description": "**Chrome/Edge**: Einstellungen → Suchmaschine → Ecosia auswählen\n   - **Firefox**: Einstellungen → Suche → Standardsuchmaschine → Ecosia\n   - **Safari**: Einstellungen → Suche → Ecosia"
+        },
+        {
+          "title": "Mobile App installieren",
+          "description": "Lade die Ecosia-App aus dem App Store oder Google Play Store\n   - Oder nutze Ecosia im mobilen Browser"
+        }
+      ],
+      "dessert": "**Suchverlauf**: Ecosia speichert deine Suchanfragen nicht dauerhaft. Nach einer Woche werden alle Daten anonymisiert.\n\n**Transparenz**: Auf der Ecosia-Website kannst du genau nachverfolgen, wie viele Bäume bereits gepflanzt wurden.",
+      "topping": "- **80% der Gewinne für Baumpflanzungen**: Ecosia investiert den Großteil seiner Gewinne in Aufforstungsprojekte\n- **CO₂-negativ**: Ecosia entfernt mehr CO₂ aus der Atmosphäre, als es verursacht\n- **Datenschutz**: Keine Verkauf von Daten an Dritte\n- **Transparente Finanzberichte**: Monatliche Veröffentlichung aller Einnahmen und Ausgaben",
+      "description": "Wechsle von Google zu Ecosia - der Suchmaschine, die Bäume pflanzt"
+    },
+    {
+      "id": "mastodon",
+      "title": "Mastodon",
+      "pubDate": "2026-01-06",
+      "category": "Social Media",
+      "heroImage": "/images/recipes/cookies.jpg",
+      "prep": [
+        {
+          "title": "Server auswählen",
+          "description": "Besuche [joinmastodon.org/servers](https://joinmastodon.org/servers)\n   - Wähle einen Server basierend auf deinen Interessen oder deiner Region\n   - Empfehlung für deutschsprachige Nutzer: mastodon.social, chaos.social"
+        },
+        {
+          "title": "Konto erstellen",
+          "description": "Klicke auf \"Registrieren\" auf dem gewählten Server\n   - Gib Benutzername, E-Mail und Passwort ein\n   - Bestätige deine E-Mail-Adresse"
+        },
+        {
+          "title": "Profil einrichten",
+          "description": "Füge ein Profilbild und Header hinzu\n   - Schreibe eine kurze Bio\n   - Verlinke deine Website oder andere Profile"
+        },
+        {
+          "title": "Leuten folgen",
+          "description": "Suche nach Hashtags, die dich interessieren\n   - Folge interessanten Accounts\n   - Nutze die lokale und föderierte Timeline zur Entdeckung"
+        }
+      ],
+      "dessert": "**Apps**: Es gibt viele Apps für Mastodon - z.B. Tusky (Android), Ivory (iOS), oder nutze die Web-Oberfläche.\n\n**Umzug**: Du kannst später zu einem anderen Server umziehen und deine Follower mitnehmen.",
+      "topping": "- **Dezentral**: Kein einzelnes Unternehmen kontrolliert das Netzwerk\n- **Chronologische Timeline**: Keine algorithmische Sortierung\n- **Open Source**: Der Code ist öffentlich einsehbar\n- **Keine Werbung**: Finanziert durch Spenden und Freiwillige\n- **Datenschutz**: Du entscheidest, wer deine Beiträge sehen kann",
+      "description": "Wechsle zu Mastodon - dem dezentralen sozialen Netzwerk"
+    },
+    {
+      "id": "bookstore",
+      "title": "Lokaler Buchladen",
+      "pubDate": "2026-01-05",
+      "category": "Shopping",
+      "heroImage": "/images/recipes/book.jpg",
+      "prep": [
+        {
+          "title": "Lokale Buchhandlung finden",
+          "description": "Suche nach Buchhandlungen in deiner Nähe\n   - Viele bieten Online-Bestellung mit Abholung an\n   - Unterstütze damit lokale Geschäfte und Arbeitsplätze"
+        },
+        {
+          "title": "Online-Alternativen",
+          "description": "**buch7.de**: Spendet 75% des Gewinns an soziale Projekte\n   - **genialokal.de**: Vermittelt an lokale Buchhandlungen\n   - **Thalia, Hugendubel**: Deutsche Buchhandelsketten"
+        },
+        {
+          "title": "Gebrauchte Bücher",
+          "description": "**medimops.de**: Gebrauchte Bücher, Filme, Spiele\n   - **booklooker.de**: Marktplatz für gebrauchte Bücher\n   - Lokale Second-Hand-Läden"
+        }
+      ],
+      "dessert": "**Bibliothek**: Nutze deine lokale Bibliothek - viele bieten auch E-Book-Ausleihe an.\n\n**Lesekreise**: Tausche Bücher mit Freunden oder tritt einem Lesekreis bei.",
+      "topping": "- **Lokale Wirtschaft**: Unterstützt Arbeitsplätze vor Ort\n- **Beratung**: Persönliche Buchempfehlungen vom Fachpersonal\n- **Nachhaltigkeit**: Kürzere Lieferwege, weniger Verpackung\n- **Faire Arbeitsbedingungen**: Bessere Bedingungen als bei großen Online-Händlern",
+      "description": "Unterstütze lokale Buchhandlungen statt Amazon"
+    }
+  ]
+}

@@ -3,12 +3,12 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getRelativeLocaleUrl } from "astro:i18n";
 import RecipeCard from "../../components/RecipeCard";
 import { EventMap } from "../../components/EventMap";
-import { getCollection } from "astro:content";
 import { useTranslations } from "../../utils/i18n";
 import { Image } from "astro:assets";
 import { getNextDIDayInfo } from "../../utils/diday";
 import heroImage from "../../assets/hero1.jpg";
 import { LOCALES } from "../../consts";
+import { getEntry } from "astro:content";
 
 export function getStaticPaths() {
   return LOCALES.map((lang) => ({ params: { lang } }));
@@ -17,10 +17,15 @@ export function getStaticPaths() {
 const { lang } = Astro.params;
 const t = useTranslations(lang);
 
-const recipes = (await getCollection("recipes")).filter(
-  (recipe) => recipe.id.split("/")[0] === lang
-);
-const featuredRecipes = recipes.slice(0, 6);
+const recipesData = (await getEntry("recipes", lang))?.data.recipes || [];
+const featuredRecipes = recipesData.slice(0, 6).map((recipe: any) => ({
+  id: `${lang}/${recipe.id}`,
+  data: {
+    title: recipe.title,
+    description: recipe.description,
+    heroImage: recipe.heroImage,
+  },
+}));
 
 // Get next DI.DAY date
 const { formatted: nextDIDayDate } = getNextDIDayInfo(lang);
@@ -92,10 +97,7 @@ const heroSubtitle = lang === "de"
             <RecipeCard
               recipe={recipe}
               seeText={t.recipe.see}
-              href={getRelativeLocaleUrl(
-                lang,
-                `recipes/${recipe.id.replace(new RegExp(`^${lang}/`), "").replace(/\.md$/, "")}`
-              )}
+              href={getRelativeLocaleUrl(lang, `recipes/${recipe.id.split("/")[1]}`)}
               client:load
             />
           ))

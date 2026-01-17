@@ -76,8 +76,13 @@
         "title": "Presse",
         "description": "Informationen für Medienvertreter und Journalisten",
         "graphics_title": "Grafiken & Materialien",
-        "graphics_text": "Hier finden Sie Logos, Banner und andere Materialien für die Berichterstattung.",
+        "graphics_text": "Hier findest du Logos, Banner und andere Materialien für die Berichterstattung.",
         "contact_title": "Kontakt",
-        "contact_text": "Für Anfragen und weitere Informationen kontaktieren Sie uns unter:"
+        "contact_text": "Für Anfragen und weitere Informationen kontaktiere uns unter:"
+    },
+    "not_found": {
+        "title": "Seite nicht gefunden",
+        "description": "Entschuldigung, wir konnten die Seite, die du suchst, nicht finden. Sie wurde möglicherweise verschoben oder gelöscht.",
+        "home": "Zurück zur Startseite"
     }
 }

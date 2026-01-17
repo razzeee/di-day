@@ -79,5 +79,10 @@
         "graphics_text": "Here you will find logos, banners and other materials for reporting.",
         "contact_title": "Contact",
         "contact_text": "For inquiries and further information, please contact us at:"
+    },
+    "not_found": {
+        "title": "Page Not Found",
+        "description": "Sorry, we couldn't find the page you were looking for. It might have been moved or deleted.",
+        "home": "Back to Home"
     }
 }

@@ -6,8 +6,8 @@ description: "Digitale Unabhängigkeit erreicht man am besten gemeinsam."
 
 # Gemeinsam wechseln
 
-Digitale Unabhängigkeit erreicht man am besten gemeinsam.
+Digitale Unabhängigkeit erreicht man am besten gemeinsam. Komm in unseren Matrix Space und sei Teil der Gemeinschaft!
 
-Diese Seite befindet sich noch im Aufbau. Hier wirst du bald Informationen darüber finden, wie du dich mit anderen vernetzen kannst, um gemeinsam den Wechsel zu datenschutzfreundlichen Alternativen zu gestalten.
+Tritt unserem [Digital Independence Space im Matrix Netzwerk](https://matrix.to/#/#di-space:fairydust.space) bei. Hier kannst du dich mit anderen austauschen, Fragen stellen und gemeinsam den Wechsel zu datenschutzfreundlichen Alternativen gestalten.
 
-In der Zwischenzeit kannst du unsere [Wechselrezepte](/de/recipes) entdecken.
+Besuche auch unsere [Wechselrezepte](/de/recipes) für praktische Anleitungen.

@@ -6,8 +6,8 @@ description: "Digital independence is best achieved together."
 
 # Switch Together
 
-Digital independence is best achieved together.
+Digital independence is best achieved together. Join our Matrix Space and become part of the community!
 
-This page is currently under construction. Here you will soon find information on how to connect with others to make the switch to privacy-friendly alternatives together.
+Join our [Digital Independence Space on the Matrix network](https://matrix.to/#/#di-space:fairydust.space). Here you can connect with others, ask questions, and make the switch to privacy-friendly alternatives together.
 
-In the meantime, you can explore our [recipes](/en/recipes).
+Also check out our [recipes](/en/recipes) for practical guides.

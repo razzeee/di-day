@@ -1,5 +1,5 @@
 import { getEntry } from "astro:content";
-import { DEFAULT_LOCALE } from "../consts";
+import { DEFAULT_LOCALE, LOCALES } from "../consts";
 
 /**
  * Attempts to fetch a content entry for the current language.
@@ -19,7 +19,9 @@ export async function getLocalizedContent(
   let entry = await getEntry(collection, id);
   let isFallback = false;
 
-  if (!entry && originalLang !== DEFAULT_LOCALE) {
+  const isKnownLocale = (LOCALES as readonly string[]).includes(originalLang);
+
+  if (!entry && originalLang !== DEFAULT_LOCALE && isKnownLocale) {
     // Replace the language prefix (e.g., "en/" or just "en") with the default locale
     const fallbackId = id.replace(new RegExp(`^${originalLang}(\\/|$)`), `${DEFAULT_LOCALE}$1`);
 

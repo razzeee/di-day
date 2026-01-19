@@ -40,7 +40,7 @@
     "@fontsource/atkinson-hyperlegible": "^5.2.8",
     "@fontsource/intel-one-mono": "^5.2.2",
     "@fontsource/overpass": "^5.2.8",
-    "@tinacms/cli": "^2.1.0",
+    "@tinacms/cli": "^2.1.1",
     "@types/node": "^25.0.6",
     "@types/react": "^19.2.8",
     "@types/react-dom": "^19.2.3",

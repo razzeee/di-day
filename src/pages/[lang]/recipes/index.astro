@@ -6,6 +6,7 @@ import { getRelativeLocaleUrl } from "astro:i18n";
 import { LOCALES } from "@/consts.ts";
 import { getLocalizedContent } from "@/utils/content.ts";
 import FallbackBanner from "@/components/FallbackBanner.astro";
+import type { RecipesRecipes } from "../../../tina/__generated__/types";
 
 export function getStaticPaths() {
   return LOCALES.map((lang) => ({ params: { lang } }));
@@ -16,7 +17,7 @@ const t = useTranslations(lang);
 
 const { entry, isFallback } = await getLocalizedContent("recipes", lang);
 const recipesData = entry?.data.recipes || [];
-const recipes = recipesData.map((recipe: any) => ({
+const recipes = recipesData.map((recipe: RecipesRecipes) => ({
   id: `${lang}/${recipe.id}`,
   data: {
     title: recipe.title,
@@ -47,7 +48,7 @@ const recipes = recipesData.map((recipe: any) => ({
       transition:animate="fade"
     >
       {
-        recipes.map((recipe: any) => (
+        recipes.map((recipe: { id: string; data: RecipesRecipes }) => (
           <RecipeCard
             recipe={recipe}
             href={getRelativeLocaleUrl(
